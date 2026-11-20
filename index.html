@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Car Loan Assistance for New & Used Cars | Your Company Name</title>
+<meta name="description" content="Explore new and used car loan options from our banking and NBFC partners. Get personalised assistance, compare offers and calculate your EMI.">
+<meta property="og:title" content="Your Dream Car Is Closer Than You Think">
+<meta property="og:description" content="Car loan assistance from a trusted DSA partner. New and used cars, multiple finance partners.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=70">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@0.383.0/dist/umd/lucide.min.js"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{navy:'#063B60',deep:'#052E4A',royal:'#0757C7',mist:'#F3F7FB',ink:'#152D40',slate2:'#64748B'},fontFamily:{head:['Manrope','sans-serif'],body:['Inter','sans-serif']}}}}
+</script>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:Inter,sans-serif;color:#152D40;overflow-x:hidden}
+h1,h2,h3,.fh{font-family:Manrope,sans-serif;letter-spacing:-.02em}
+.field{width:100%;border:1px solid #d6e0ea;border-radius:12px;padding:.7rem .9rem;background:#fff;font-size:.95rem;outline:none;transition:.2s}
+.field:focus{border-color:#0757C7;box-shadow:0 0 0 3px rgba(7,87,199,.15)}
+.field.err{border-color:#dc2626}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border-radius:12px;padding:.8rem 1.4rem;font-weight:600;transition:.2s;cursor:pointer}
+.btn-p{background:#0757C7;color:#fff}.btn-p:hover{background:#064aa8;transform:translateY(-1px)}
+.card{background:#fff;border:1px solid #e2eaf2;border-radius:20px;transition:.25s}
+.card:hover{box-shadow:0 18px 40px -20px rgba(6,59,96,.3);transform:translateY(-3px)}
+.rv{opacity:0;transform:translateY(18px);transition:.7s}.rv.in{opacity:1;transform:none}
+input[type=range]{width:100%;accent-color:#0757C7}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s}
+.img-fb{background:linear-gradient(135deg,#063B60,#0757C7)}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+:focus-visible{outline:2px solid #0757C7;outline-offset:2px}
+</style>
+</head>
+<body class="bg-white antialiased">
+<!-- CONFIG: replace phone (country code, no +) and company name -->
+<script>const CFG={wa:'919999999999',tel:'+919999999999',name:'Your Company Name'}</script>
+
+<!-- 1. HEADER -->
+<header id="hdr" class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-transparent transition">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 lg:h-20 flex items-center justify-between gap-4">
+<a href="#home" class="flex items-center gap-2.5 shrink-0"><span class="w-10 h-10 rounded-xl bg-navy text-white grid place-items-center"><i data-lucide="car-front" class="w-5 h-5"></i></span><span class="fh font-extrabold text-navy text-lg leading-tight">Your Company<br><span class="text-xs font-semibold text-slate2">Car Loan Partner</span></span></a>
+<nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-ink" aria-label="Main">
+<a class="hover:text-royal transition" href="#home">Home</a><a class="hover:text-royal transition" href="#about">About Us</a><a class="hover:text-royal transition" href="#loans">Car Loan</a><a class="hover:text-royal transition" href="#partners">Bank Partners</a><a class="hover:text-royal transition" href="#emi">EMI Calculator</a><a class="hover:text-royal transition" href="#faq">FAQs</a><a class="hover:text-royal transition" href="#contact">Contact</a></nav>
+<div class="hidden lg:flex items-center gap-3"><a data-wa href="#" target="_blank" rel="noopener" class="btn border border-emerald-600 text-emerald-700 hover:bg-emerald-50 !py-2.5"><i data-lucide="message-circle" class="w-4 h-4"></i>WhatsApp</a><a href="#contact" class="btn btn-p !py-2.5">Apply for Car Loan</a></div>
+<button id="menuBtn" class="lg:hidden p-2 rounded-lg" aria-label="Open menu" aria-expanded="false"><i data-lucide="menu" class="w-6 h-6"></i></button>
+</div>
+<div id="mobMenu" class="hidden lg:hidden border-t bg-white px-4 pb-5 pt-2 space-y-1">
+<a class="block py-3 font-medium" href="#home">Home</a><a class="block py-3 font-medium" href="#about">About Us</a><a class="block py-3 font-medium" href="#loans">Car Loan</a><a class="block py-3 font-medium" href="#partners">Bank Partners</a><a class="block py-3 font-medium" href="#emi">EMI Calculator</a><a class="block py-3 font-medium" href="#faq">FAQs</a><a class="block py-3 font-medium" href="#contact">Contact</a>
+<div class="grid grid-cols-2 gap-3 pt-3"><a data-wa href="#" target="_blank" rel="noopener" class="btn border border-emerald-600 text-emerald-700">WhatsApp</a><a href="#contact" class="btn btn-p">Apply Now</a></div></div>
+</header>
+
+<main id="home">
+<!-- 2. HERO -->
+<section class="relative bg-gradient-to-b from-mist to-white overflow-hidden">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 lg:py-20 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+<div>
+<p class="text-xs font-bold tracking-widest text-royal mb-4">YOUR TRUSTED CAR LOAN DSA PARTNER</p>
+<h1 class="text-4xl sm:text-5xl xl:text-6xl font-extrabold text-deep leading-[1.05]">Your Dream Car Is Closer Than You Think.</h1>
+<p class="mt-5 text-slate2 text-lg max-w-xl">Explore car loan options from our banking and financial partners. Get assistance with your application, compare available offers and take the next step towards your dream car.</p>
+<ul class="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-navy">
+<li class="flex items-center gap-2"><i data-lucide="landmark" class="w-4 h-4 text-royal"></i>Multiple Finance Partners</li><li class="flex items-center gap-2"><i data-lucide="user-check" class="w-4 h-4 text-royal"></i>Personalized Loan Assistance</li><li class="flex items-center gap-2"><i data-lucide="mouse-pointer-click" class="w-4 h-4 text-royal"></i>Simple Application Process</li></ul>
+<form id="heroForm" class="enq card !rounded-2xl mt-8 p-5 sm:p-6 shadow-xl shadow-navy/10 grid sm:grid-cols-2 gap-3" novalidate data-ok="Thank you! Your enquiry details are validated (demo only — not saved to any server).">
+<div><label class="sr-only" for="h-name">Full name</label><input id="h-name" name="name" required class="field" placeholder="Full Name" autocomplete="name"></div>
+<div><label class="sr-only" for="h-mob">Mobile number</label><input id="h-mob" name="mobile" required inputmode="numeric" maxlength="10" class="field" placeholder="Mobile Number" autocomplete="tel-national"></div>
+<div><label class="sr-only" for="h-type">Car type</label><select id="h-type" name="type" required class="field"><option value="">New Car / Used Car</option><option>New Car</option><option>Used Car</option></select></div>
+<div><label class="sr-only" for="h-city">City</label><input id="h-city" name="city" required class="field" placeholder="City" autocomplete="address-level2"></div>
+<button class="btn btn-p sm:col-span-2" type="submit">Get Car Loan Assistance</button>
+<p class="sm:col-span-2 text-xs text-slate2 flex gap-2"><i data-lucide="shield-check" class="w-4 h-4 shrink-0 text-royal"></i>By submitting, you agree to be contacted by our team about car loan assistance. We respect your privacy.</p>
+<p class="msg sm:col-span-2 hidden rounded-lg bg-emerald-50 text-emerald-800 text-sm p-3" role="status"></p>
+</form>
+</div>
+<div class="relative">
+<div class="absolute -top-6 -right-6 w-40 h-40 rounded-full bg-royal/10 blur-2xl"></div>
+<div class="absolute -bottom-6 -left-4 w-28 h-28 border-2 border-royal/20 rounded-3xl hidden sm:block"></div>
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1100&q=75" alt="Modern luxury sports car parked against contemporary city architecture" class="relative w-full aspect-[4/5] sm:aspect-[5/4] lg:aspect-[4/5] object-cover rounded-[28px] shadow-2xl shadow-navy/30 img-fb" fetchpriority="high">
+<div class="absolute left-3 right-3 sm:left-auto sm:-left-8 sm:right-auto bottom-4 sm:bottom-10 sm:w-72 bg-white rounded-2xl p-5 shadow-2xl border border-slate-100">
+<div class="flex items-center gap-3 mb-3"><span class="w-10 h-10 rounded-xl bg-royal text-white grid place-items-center"><i data-lucide="badge-indian-rupee" class="w-5 h-5"></i></span><p class="fh font-extrabold text-deep">Car Loan</p></div>
+<ul class="space-y-2 text-sm text-ink"><li class="flex gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-royal mt-0.5"></i>Flexible Repayment Options</li><li class="flex gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-royal mt-0.5"></i>Personalized Assistance</li><li class="flex gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-royal mt-0.5"></i>Simple Application Process</li></ul></div>
+</div></div>
+</section>
+
+<!-- 3. QUICK BENEFITS -->
+<section class="border-y border-slate-100 bg-white"><div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6" id="benefits"></div></section>
+
+<!-- 4. ABOUT -->
+<section id="about" class="bg-deep text-white py-16 lg:py-24 relative overflow-hidden">
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-royal/20 blur-3xl"></div>
+<div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+<div class="grid lg:grid-cols-2 gap-8 items-end mb-12 rv"><h2 class="text-3xl sm:text-5xl font-extrabold leading-tight">More Than Just a Car Loan Connection.</h2>
+<p class="text-slate-300 text-lg">As a Direct Selling Agent, we help you connect with banks and NBFCs that may suit your profile and your vehicle, then stay with you through the application so you are never guessing what comes next.</p></div>
+<div class="grid md:grid-cols-3 gap-5" id="aboutCards"></div>
+<div class="mt-8 rounded-2xl border border-white/15 bg-white/5 p-5 flex gap-4 rv"><i data-lucide="info" class="w-6 h-6 text-sky-300 shrink-0"></i><p class="text-slate-200 text-sm sm:text-base"><b class="text-white">Important:</b> We are a loan facilitation partner, not a lending institution. Final loan approval, interest rates and terms are determined solely by the respective bank or NBFC.</p></div>
+</div></section>
+
+<!-- 5. WHY US -->
+<section class="py-16 lg:py-24"><div class="max-w-7xl mx-auto px-4 sm:px-6">
+<h2 class="text-3xl sm:text-5xl font-extrabold text-deep max-w-3xl leading-tight rv">Making Your Car Financing Journey Simpler.</h2>
+<div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5" id="whyCards"></div></div></section>
+
+<!-- 6. NEW vs USED -->
+<section id="loans" class="py-16 lg:py-24 bg-mist"><div class="max-w-7xl mx-auto px-4 sm:px-6">
+<h2 class="text-3xl sm:text-4xl font-extrabold text-deep mb-10 rv">New Car or Used Car — We Can Help With Both.</h2>
+<div class="grid lg:grid-cols-2 gap-6" id="loanCards"></div></div></section>
+
+<!-- 7. PARTNERS -->
+<section id="partners" class="py-16 lg:py-24 bg-[#EEF3F8]"><div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="text-center max-w-2xl mx-auto rv"><h2 class="text-3xl sm:text-4xl font-extrabold text-deep">Trusted Finance Partners. More Choices for You.</h2><p class="mt-4 text-slate2">We help connect customers with our banking and financial partners for car loan assistance.</p></div>
+<!-- Edit the PARTNERS array in the script to add real names/logo URLs once provided by the client -->
+<div id="partnerGrid" class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4"></div>
+<p class="mt-6 text-center text-xs text-slate2">Partner names shown are placeholders. Final partner list to be confirmed.</p></div></section>
+
+<!-- 8. HOW IT WORKS -->
+<section class="py-16 lg:py-24"><div class="max-w-6xl mx-auto px-4 sm:px-6">
+<h2 class="text-3xl sm:text-4xl font-extrabold text-deep text-center max-w-2xl mx-auto rv">Your Car Loan Journey in Three Simple Steps.</h2>
+<div class="relative mt-14 grid md:grid-cols-3 gap-10 md:gap-6" id="steps">
+<div class="hidden md:block absolute top-8 left-[17%] right-[17%] h-0.5 bg-gradient-to-r from-royal/20 via-royal to-royal/20"></div></div></div></section>
+
+<!-- 9. EMI -->
+<section id="emi" class="py-16 lg:py-24 bg-mist"><div class="max-w-6xl mx-auto px-4 sm:px-6">
+<div class="text-center mb-10 rv"><h2 class="text-3xl sm:text-4xl font-extrabold text-deep">Car Loan EMI Calculator</h2><p class="mt-3 text-slate2">Adjust the sliders or type values to see your estimated monthly EMI.</p></div>
+<div class="card !rounded-3xl p-5 sm:p-8 grid lg:grid-cols-2 gap-8 hover:!transform-none">
+<div class="space-y-6" id="emiInputs"></div>
+<div class="rounded-2xl bg-deep text-white p-6 sm:p-8 flex flex-col">
+<p class="text-slate-300 text-sm">Monthly EMI</p><p id="o-emi" class="fh text-4xl sm:text-5xl font-extrabold mt-1">₹0</p>
+<div class="mt-6 flex items-center gap-6"><svg viewBox="0 0 120 120" class="w-32 h-32 -rotate-90 shrink-0" role="img" aria-label="Principal versus interest"><circle cx="60" cy="60" r="46" fill="none" stroke="#38bdf8" stroke-width="18"/><circle id="donut" cx="60" cy="60" r="46" fill="none" stroke="#0757C7" stroke-width="18" stroke-dasharray="0 289" style="transition:.4s"/></svg>
+<div class="text-sm space-y-2"><p class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-royal"></span>Principal <b id="o-pp"></b></p><p class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-sky-400"></span>Interest <b id="o-ip"></b></p></div></div>
+<dl class="mt-6 space-y-3 text-sm border-t border-white/15 pt-5"><div class="flex justify-between"><dt class="text-slate-300">Loan amount</dt><dd id="o-loan" class="font-semibold"></dd></div><div class="flex justify-between"><dt class="text-slate-300">Total interest payable</dt><dd id="o-int" class="font-semibold"></dd></div><div class="flex justify-between"><dt class="text-slate-300">Total repayment amount</dt><dd id="o-tot" class="font-semibold"></dd></div></dl>
+<p class="mt-auto pt-5 text-xs text-slate-400">This calculation is indicative only. Actual EMI, interest rate and terms depend on the lender's assessment.</p></div></div></div></section>
+
+<!-- 10. TESTIMONIALS -->
+<section class="py-16 lg:py-24"><div class="max-w-7xl mx-auto px-4 sm:px-6">
+<h2 class="text-3xl sm:text-4xl font-extrabold text-deep text-center rv">Driving Customer Satisfaction Forward.</h2>
+<div class="mt-12 grid md:grid-cols-3 gap-5" id="testi"></div>
+<p class="mt-5 text-center text-xs text-slate2">Placeholder testimonials — replace with genuine, consented client feedback before launch.</p></div></section>
+
+<!-- 11. CTA + FORM -->
+<section id="contact" class="py-16 lg:py-24 bg-navy text-white"><div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-5 gap-10 items-start">
+<div class="lg:col-span-2 lg:sticky lg:top-28">
+<h2 class="text-3xl sm:text-5xl font-extrabold leading-tight">Ready to Find the Right Car Loan?</h2>
+<p class="mt-5 text-slate-200 text-lg">Take the first step towards your dream car. Share your requirements and our team will get in touch with you.</p>
+<div class="mt-8 flex flex-wrap gap-3"><a data-wa href="#" target="_blank" rel="noopener" class="btn bg-emerald-500 hover:bg-emerald-600 text-white"><i data-lucide="message-circle" class="w-5 h-5"></i>Chat on WhatsApp</a><a data-tel href="#" class="btn bg-white text-navy hover:bg-slate-100"><i data-lucide="phone" class="w-5 h-5"></i>Call Now</a></div></div>
+<form id="mainForm" class="enq lg:col-span-3 bg-white text-ink rounded-3xl p-5 sm:p-8 grid sm:grid-cols-2 gap-4" novalidate data-ok="Thank you! Your enquiry is valid. This is a frontend demo — nothing has been sent or saved.">
+<div><label class="text-sm font-medium" for="m-name">Full Name *</label><input id="m-name" name="name" required class="field mt-1"></div>
+<div><label class="text-sm font-medium" for="m-mob">Mobile Number *</label><input id="m-mob" name="mobile" required inputmode="numeric" maxlength="10" class="field mt-1"></div>
+<div><label class="text-sm font-medium" for="m-mail">Email Address *</label><input id="m-mail" name="email" type="email" required class="field mt-1"></div>
+<div><label class="text-sm font-medium" for="m-city">City *</label><input id="m-city" name="city" required class="field mt-1"></div>
+<div><label class="text-sm font-medium" for="m-emp">Employment Type *</label><select id="m-emp" name="emp" required class="field mt-1"><option value="">Select</option><option>Salaried</option><option>Self-Employed Professional</option><option>Self-Employed Business</option></select></div>
+<div><label class="text-sm font-medium" for="m-type">New Car / Used Car *</label><select id="m-type" name="type" required class="field mt-1"><option value="">Select</option><option>New Car</option><option>Used Car</option></select></div>
+<div><label class="text-sm font-medium" for="m-model">Vehicle Model *</label><input id="m-model" name="model" required class="field mt-1" placeholder="e.g. Hyundai Creta"></div>
+<div><label class="text-sm font-medium" for="m-price">Vehicle Price (₹) *</label><input id="m-price" name="price" required inputmode="numeric" class="field mt-1"></div>
+<div class="sm:col-span-2"><label class="text-sm font-medium" for="m-loan">Required Loan Amount (₹) *</label><input id="m-loan" name="loan" required inputmode="numeric" class="field mt-1"></div>
+<label class="sm:col-span-2 flex gap-3 text-sm text-slate2"><input type="checkbox" name="consent" required class="mt-1 w-4 h-4 accent-royal"><span>I agree to be contacted by the team regarding my car loan enquiry and accept the Privacy Policy. *</span></label>
+<button class="btn btn-p sm:col-span-2" type="submit">Submit Loan Enquiry</button>
+<p class="msg sm:col-span-2 hidden rounded-lg bg-emerald-50 text-emerald-800 text-sm p-3" role="status"></p>
+</form></div></section>
+
+<!-- 12. FAQ -->
+<section id="faq" class="py-16 lg:py-24"><div class="max-w-3xl mx-auto px-4 sm:px-6">
+<h2 class="text-3xl sm:text-4xl font-extrabold text-deep text-center mb-10 rv">Frequently Asked Questions</h2>
+<div id="faqList" class="space-y-3"></div></div></section>
+</main>
+
+<!-- 13. FOOTER -->
+<footer class="bg-deep text-slate-300 pt-16 pb-8"><div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+<div><a href="#home" class="flex items-center gap-2.5 text-white"><span class="w-10 h-10 rounded-xl bg-white/10 grid place-items-center"><i data-lucide="car-front" class="w-5 h-5"></i></span><span class="fh font-extrabold text-lg">Your Company</span></a><p class="mt-4 text-sm">Helping customers explore car loan options from banking and NBFC partners, with clear guidance at every step.</p>
+<div class="mt-5 flex gap-3"><a href="#" aria-label="Facebook" class="w-9 h-9 rounded-full bg-white/10 grid place-items-center hover:bg-royal transition"><i data-lucide="facebook" class="w-4 h-4"></i></a><a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full bg-white/10 grid place-items-center hover:bg-royal transition"><i data-lucide="instagram" class="w-4 h-4"></i></a><a href="#" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-white/10 grid place-items-center hover:bg-royal transition"><i data-lucide="linkedin" class="w-4 h-4"></i></a><a href="#" aria-label="YouTube" class="w-9 h-9 rounded-full bg-white/10 grid place-items-center hover:bg-royal transition"><i data-lucide="youtube" class="w-4 h-4"></i></a></div></div>
+<div><h3 class="text-white font-bold mb-4">Quick Links</h3><ul class="space-y-2 text-sm"><li><a class="hover:text-white" href="#about">About Us</a></li><li><a class="hover:text-white" href="#partners">Bank Partners</a></li><li><a class="hover:text-white" href="#emi">EMI Calculator</a></li><li><a class="hover:text-white" href="#faq">FAQs</a></li><li><a class="hover:text-white" href="#contact">Contact</a></li></ul></div>
+<div><h3 class="text-white font-bold mb-4">Car Loan Services</h3><ul class="space-y-2 text-sm"><li><a class="hover:text-white" href="#loans">New Car Loan</a></li><li><a class="hover:text-white" href="#loans">Used Car Loan</a></li><li><a class="hover:text-white" href="#emi">EMI Estimate</a></li><li><a class="hover:text-white" href="#contact">Application Assistance</a></li></ul></div>
+<div><h3 class="text-white font-bold mb-4">Contact</h3><ul class="space-y-3 text-sm"><li class="flex gap-2"><i data-lucide="message-circle" class="w-4 h-4 mt-0.5 shrink-0"></i><a data-wa href="#" class="hover:text-white">WhatsApp us</a></li><li class="flex gap-2"><i data-lucide="mail" class="w-4 h-4 mt-0.5 shrink-0"></i><a href="mailto:info@example.com" class="hover:text-white break-all">info@example.com</a></li><li class="flex gap-2"><i data-lucide="map-pin" class="w-4 h-4 mt-0.5 shrink-0"></i>Office Address, Street, City, State – PIN</li></ul></div></div>
+<p class="mt-12 border-t border-white/10 pt-6 text-xs leading-relaxed"><b class="text-white">Disclaimer:</b> <span class="co">[Company Name]</span> is not a bank or lending institution. We facilitate connections between customers and our partner banks/NBFCs. All loan approvals, interest rates, eligibility and disbursement decisions are made by the respective lender.</p>
+<div class="mt-5 flex flex-wrap justify-between gap-3 text-xs"><p>© <span id="yr"></span> <span class="co">[Company Name]</span>. All rights reserved.</p><p class="flex gap-4"><a href="#" class="hover:text-white">Privacy Policy</a><a href="#" class="hover:text-white">Terms &amp; Conditions</a><a href="#" class="hover:text-white">Disclaimer</a></p></div></div></footer>
+
+<button id="toTop" aria-label="Back to top" class="fixed bottom-5 right-5 z-40 w-11 h-11 rounded-full bg-royal text-white shadow-lg grid place-items-center opacity-0 pointer-events-none transition"><i data-lucide="arrow-up" class="w-5 h-5"></i></button>
+
+<script>
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const IMG=(id,w=900)=>`https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=70`;
+const ic=n=>`<i data-lucide="${n}" class="w-6 h-6"></i>`;
+const render=(id,arr,fn)=>$(id).insertAdjacentHTML('beforeend',arr.map(fn).join(''));
+
+/* Content data */
+render('#benefits',[['car','New Car Financing','Brand-new vehicles'],['history','Used Car Financing','Pre-owned vehicles'],['landmark','Multiple Partners','Banks and NBFCs'],['file-check-2','Easy Application','Guided assistance'],['calendar-range','Flexible Tenure','Choose what fits'],['headset','Dedicated Support','Real people, real help']],
+b=>`<div class="flex items-start gap-3"><span class="text-royal mt-0.5">${ic(b[0])}</span><div><p class="fh font-bold text-sm text-deep">${b[1]}</p><p class="text-xs text-slate2">${b[2]}</p></div></div>`);
+render('#aboutCards',[['landmark','Multiple Finance Partners','Access a range of banks and NBFCs through a single enquiry.'],['user-round-check','Personalized Assistance','An advisor who understands your needs and explains your options.'],['route','End-to-End Application Support','Guidance from enquiry through to the lender\'s verification.']],
+c=>`<div class="rv rounded-2xl border border-white/15 bg-white/5 p-6 hover:bg-white/10 transition"><span class="w-12 h-12 rounded-xl bg-royal grid place-items-center mb-5">${ic(c[0])}</span><h3 class="fh font-bold text-xl">${c[1]}</h3><p class="mt-2 text-slate-300 text-sm">${c[2]}</p></div>`);
+render('#whyCards',[['layers','Multiple Financing Options','Compare options from different lenders.\nFind one that suits your budget.'],['compass','Personalized Guidance','Advice shaped around your profile.\nNo one-size-fits-all pitches.'],['eye','Transparent Information','Clear explanation of the process.\nLender terms shared as they are.'],['life-buoy','Dedicated Customer Support','A named contact for your queries.\nAvailable when you need answers.']],
+c=>`<div class="card rv p-6"><span class="w-12 h-12 rounded-xl bg-mist text-royal grid place-items-center mb-5">${ic(c[0])}</span><h3 class="fh font-bold text-lg text-deep">${c[1]}</h3><p class="mt-2 text-sm text-slate2">${c[2].replace('\n','<br>')}</p></div>`);
+render('#loanCards',[
+{t:'New Car Loan',d:'Get assistance in exploring financing options for your new car purchase.',f:['New vehicle financing assistance','Finance partner options','Loan application support','Personalized guidance'],i:'photo-1549317661-bd32c8ce0db2',a:'Brand-new silver car in a bright showroom',c:'Explore New Car Loan',v:'New Car'},
+{t:'Used Car Loan',d:'Explore financing options when purchasing a pre-owned vehicle.',f:['Used vehicle financing assistance','Vehicle-related documentation guidance','Finance partner options','Application support'],i:'photo-1494976388531-d1058494cdd8',a:'Well-kept pre-owned car on a quiet street',c:'Explore Used Car Loan',v:'Used Car'}],
+c=>`<article class="card rv overflow-hidden !rounded-3xl flex flex-col"><img loading="lazy" src="${IMG(c.i,1000)}" alt="${c.a}" class="w-full aspect-[16/9] object-cover img-fb"><div class="p-6 sm:p-8 flex flex-col flex-1"><h3 class="fh text-2xl font-extrabold text-deep">${c.t}</h3><p class="mt-2 text-slate2">${c.d}</p><ul class="mt-5 space-y-2 text-sm">${c.f.map(x=>`<li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-royal mt-0.5 shrink-0"></i>${x}</li>`).join('')}</ul><a href="#contact" data-pick="${c.v}" class="btn btn-p mt-7 self-start">${c.c}</a></div></article>`);
+
+/* PARTNERS: edit this array. Add logo:'url' for real logos once client-approved. */
+const PARTNERS=[['Partner Bank 1','Private Bank'],['Partner Bank 2','Public Sector Bank'],['Partner Bank 3','Private Bank'],['Partner Bank 4','Public Sector Bank'],['Partner NBFC 1','NBFC'],['Partner NBFC 2','NBFC'],['Partner NBFC 3','NBFC'],['Partner NBFC 4','Small Finance Bank']];
+render('#partnerGrid',PARTNERS,p=>`<div class="card rv p-5 text-center"><div class="h-14 flex items-center justify-center">${p[2]?`<img src="${p[2]}" alt="${p[0]}" class="max-h-12">`:`<span class="w-11 h-11 rounded-xl bg-slate-100 text-slate-400 grid place-items-center"><i data-lucide="landmark" class="w-5 h-5"></i></span>`}</div><p class="fh font-bold text-sm text-deep mt-2">${p[0]}</p><p class="text-xs text-slate2 mt-1">${p[1]}</p></div>`);
+
+render('#steps',[['Submit Your Enquiry','Share your basic details and car financing requirements.'],['Connect With Our Advisor','Our team reviews your requirements and assists you in exploring suitable financing options.'],['Complete Your Application','Proceed with the selected lender\'s application and verification process.']],
+(s,i)=>`<div class="relative text-center rv" style="transition-delay:${i*150}ms"><span class="relative z-10 mx-auto w-16 h-16 rounded-full bg-royal text-white fh text-xl font-extrabold grid place-items-center ring-8 ring-white shadow-lg">0${i+1}</span><h3 class="fh font-bold text-xl text-deep mt-5">${s[0]}</h3><p class="mt-2 text-sm text-slate2 max-w-xs mx-auto">${s[1]}</p></div>`);
+
+render('#testi',[['Customer Name 1','Pune','Clear guidance from the first call. I understood every step of the process.','photo-1507003211169-0a1dd7228f2d'],['Customer Name 2','Bengaluru','Helpful and patient while I compared options for my used car purchase.','photo-1494790108377-be9c29b29330'],['Customer Name 3','Delhi','The advisor kept me informed until the application was complete.','photo-1500648767791-00dcc994a43e']],
+t=>`<figure class="card rv p-6 flex flex-col"><div class="flex text-amber-400 gap-0.5" aria-label="5 out of 5 stars">${'<i data-lucide="star" class="w-4 h-4 fill-current"></i>'.repeat(5)}</div><blockquote class="mt-4 text-ink flex-1">“${t[2]}”</blockquote><figcaption class="mt-6 flex items-center gap-3"><img loading="lazy" src="${IMG(t[3],120)}" alt="Placeholder photo of ${t[0]}" class="w-11 h-11 rounded-full object-cover bg-slate-200"><div><p class="fh font-bold text-sm text-deep">${t[0]}</p><p class="text-xs text-slate2">${t[1]}</p></div></figcaption></figure>`);
+
+const FAQ=[['What is a Car Loan DSA?','A Direct Selling Agent (DSA) is an intermediary that helps customers connect with banks and NBFCs for loans. We assist with the process; the lender makes all lending decisions.'],['Can I apply for a new car loan?','Yes. Share your requirements and our team will help you explore financing options for a new vehicle from our finance partners.'],['Can I get assistance for a used car loan?','Yes. We assist with used car financing and guide you on vehicle-related documentation. Eligibility is determined by the lender.'],['What documents are required for a car loan?','Typically identity proof, address proof, income documents and bank statements, plus vehicle details. Exact requirements vary by lender and profile.'],['Who decides the final loan approval and interest rate?','Only the respective bank or NBFC. We are not a lender and cannot guarantee approval, rates or terms.'],['How can I check my estimated monthly EMI?','Use the EMI Calculator on this page. Enter vehicle price, down payment, interest rate and tenure. The result is indicative only.']];
+render('#faqList',FAQ,(f,i)=>`<div class="card !rounded-2xl hover:!transform-none hover:!shadow-none"><h3><button class="faq-q w-full flex justify-between items-center gap-4 text-left p-5 font-semibold fh text-deep" aria-expanded="false" aria-controls="fa${i}">${f[0]}<i data-lucide="plus" class="w-5 h-5 text-royal shrink-0 transition"></i></button></h3><div id="fa${i}" class="faq-a"><p class="px-5 pb-5 text-slate2 text-sm">${f[1]}</p></div></div>`);
+
+/* EMI Calculator */
+const E=[['price','Vehicle Price (₹)',200000,5000000,50000,1000000],['down','Down Payment (₹)',0,2500000,10000,200000],['rate','Annual Interest Rate (%)',6,20,.1,9],['years','Loan Tenure (Years)',1,8,1,5]];
+$('#emiInputs').innerHTML=E.map(e=>`<div><div class="flex justify-between items-center gap-3"><label class="text-sm font-semibold" for="n-${e[0]}">${e[1]}</label><input id="n-${e[0]}" type="number" min="${e[2]}" max="${e[3]}" step="${e[4]}" value="${e[5]}" class="field !w-36 !py-1.5 text-right"></div><input id="r-${e[0]}" type="range" min="${e[2]}" max="${e[3]}" step="${e[4]}" value="${e[5]}" class="mt-3" aria-label="${e[1]}"></div>`).join('')+`<div class="rounded-xl bg-mist p-4 flex justify-between"><span class="text-sm font-semibold">Loan Amount (auto)</span><b id="loanAuto" class="fh text-deep"></b></div>`;
+const inr=n=>'₹'+Math.round(n).toLocaleString('en-IN');
+function calc(src){
+  const v=k=>+$('#n-'+k).value||0;
+  if(src){const k=src.id.slice(2);const o=src.id[0]==='n'?$('#r-'+k):$('#n-'+k);o.value=src.value}
+  const price=v('price');const dp=Math.min(v('down'),price);$('#r-down').max=Math.max(price,10000);
+  const P=Math.max(price-dp,0),r=v('rate')/1200,n=Math.max(v('years'),1)*12;
+  const emi=P===0?0:r===0?P/n:P*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1);
+  const tot=emi*n,int=Math.max(tot-P,0);
+  $('#loanAuto').textContent=$('#o-loan').textContent=inr(P);$('#o-emi').textContent=inr(emi);$('#o-int').textContent=inr(int);$('#o-tot').textContent=inr(tot);
+  const pp=tot?P/tot*100:100;$('#o-pp').textContent=pp.toFixed(0)+'%';$('#o-ip').textContent=(100-pp).toFixed(0)+'%';
+  $('#donut').setAttribute('stroke-dasharray',`${pp*2.89} 289`);
+}
+$$('#emiInputs input').forEach(i=>i.addEventListener('input',()=>calc(i)));calc();
+
+/* FAQ accordion: one open at a time */
+$$('.faq-q').forEach(b=>b.addEventListener('click',()=>{
+  const open=b.getAttribute('aria-expanded')==='true';
+  $$('.faq-q').forEach(x=>{x.setAttribute('aria-expanded','false');$('#'+x.getAttribute('aria-controls')).style.maxHeight=0;x.querySelector('i,svg').style.transform=''});
+  if(!open){b.setAttribute('aria-expanded','true');const p=$('#'+b.getAttribute('aria-controls'));p.style.maxHeight=p.scrollHeight+'px';b.querySelector('i,svg').style.transform='rotate(45deg)'}
+}));
+
+/* Forms: validation + demo success (no backend) */
+$$('.enq').forEach(f=>f.addEventListener('submit',e=>{
+  e.preventDefault();let ok=true;
+  $$('[required]',f).forEach(el=>{
+    let good=el.type==='checkbox'?el.checked:el.value.trim()!=='';
+    if(good&&el.name==='mobile')good=/^[6-9]\d{9}$/.test(el.value.trim());
+    if(good&&el.type==='email')good=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value);
+    if(good&&['price','loan'].includes(el.name))good=+el.value>0;
+    el.classList.toggle('err',!good);el.setAttribute('aria-invalid',!good);if(!good)ok=false;
+  });
+  const m=$('.msg',f);m.classList.remove('hidden');
+  if(ok){m.className='msg sm:col-span-2 rounded-lg bg-emerald-50 text-emerald-800 text-sm p-3';m.textContent=f.dataset.ok;f.reset()}
+  else{m.className='msg sm:col-span-2 rounded-lg bg-red-50 text-red-700 text-sm p-3';m.textContent='Please complete the highlighted fields. Mobile must be a valid 10-digit Indian number.'}
+}));
+$$('.field').forEach(el=>el.addEventListener('input',()=>el.classList.remove('err')));
+$$('[data-pick]').forEach(a=>a.addEventListener('click',()=>{$('#m-type').value=a.dataset.pick}));
+
+/* Contact links, menu, scroll effects */
+$$('[data-wa]').forEach(a=>a.href=`https://wa.me/${CFG.wa}?text=${encodeURIComponent('Hi, I would like help with a car loan.')}`);
+$$('[data-tel]').forEach(a=>a.href='tel:'+CFG.tel);
+$('#yr').textContent=new Date().getFullYear();
+const mb=$('#menuBtn'),mm=$('#mobMenu');
+mb.addEventListener('click',()=>{const o=mm.classList.toggle('hidden')===false;mb.setAttribute('aria-expanded',o)});
+$$('#mobMenu a').forEach(a=>a.addEventListener('click',()=>{mm.classList.add('hidden');mb.setAttribute('aria-expanded','false')}));
+const hdr=$('#hdr'),tt=$('#toTop');
+addEventListener('scroll',()=>{const y=scrollY>20;hdr.classList.toggle('shadow-md',y);hdr.classList.toggle('border-slate-100',y);const s=scrollY>600;tt.classList.toggle('opacity-0',!s);tt.classList.toggle('pointer-events-none',!s)},{passive:true});
+tt.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+$$('.rv').forEach(el=>io.observe(el));
+$$('img').forEach(i=>i.addEventListener('error',()=>{i.removeAttribute('src');i.classList.add('img-fb')}));
+lucide.createIcons();
+</script>
+</body>
+</html>
