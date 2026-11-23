@@ -1,0 +1,808 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us | Auto Mark India Pvt. Ltd.</title>
+    <meta
+      name="description"
+      content="Get in touch with Auto Mark India Pvt. Ltd. for all your loan and insurance enquiries. Call us, WhatsApp us, or visit our office in New Delhi."
+    />
+    <meta
+      property="og:title"
+      content="Contact Us | Auto Mark India Pvt. Ltd."
+    />
+    <meta
+      property="og:description"
+      content="We are here to help. Reach out for Auto, Home, Personal, Business Loans, and Insurance."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=70"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@0.383.0/dist/umd/lucide.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: "#063B60",
+              deep: "#2D1B69",
+              purple: "#5B3E96",
+              gold: "#D4AF37",
+              mist: "#F8F6FC",
+              ink: "#152D40",
+              slate2: "#64748B",
+            },
+            fontFamily: {
+              head: ["Manrope", "sans-serif"],
+              body: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 80px;
+      }
+      body {
+        font-family: Inter, sans-serif;
+        color: #152d40;
+        overflow-x: hidden;
+      }
+      h1,
+      h2,
+      h3,
+      .fh {
+        font-family: Manrope, sans-serif;
+        letter-spacing: -0.02em;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        border-radius: 12px;
+        padding: 0.8rem 1.4rem;
+        font-weight: 600;
+        transition: 0.2s;
+        cursor: pointer;
+      }
+      .btn-p {
+        background: #5b3e96;
+        color: #fff;
+      }
+      .btn-p:hover {
+        background: #4a2f7a;
+        transform: translateY(-1px);
+      }
+      .btn-gold {
+        background: #d4af37;
+        color: #2d1b69;
+      }
+      .btn-gold:hover {
+        background: #b5952f;
+        transform: translateY(-1px);
+      }
+      .field {
+        width: 100%;
+        border: 1px solid #d6e0ea;
+        border-radius: 12px;
+        padding: 0.7rem 0.9rem;
+        background: #fff;
+        font-size: 0.95rem;
+        outline: none;
+        transition: 0.2s;
+      }
+      .field:focus {
+        border-color: #5b3e96;
+        box-shadow: 0 0 0 3px rgba(91, 62, 150, 0.15);
+      }
+      .field.err {
+        border-color: #dc2626;
+      }
+      .card {
+        background: #fff;
+        border: 1px solid #e2eaf2;
+        border-radius: 20px;
+        transition: 0.25s;
+      }
+      .rv {
+        opacity: 0;
+        transform: translateY(18px);
+        transition: 0.7s;
+      }
+      .rv.in {
+        opacity: 1;
+        transform: none;
+      }
+      .img-fb {
+        background: linear-gradient(135deg, #2d1b69, #5b3e96);
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .rv {
+          opacity: 1;
+          transform: none;
+          transition: none;
+        }
+        html {
+          scroll-behavior: auto;
+        }
+      }
+      :focus-visible {
+        outline: 2px solid #5b3e96;
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body class="bg-white antialiased">
+    <script>
+      const CFG = {
+        wa: "919811554666",
+        tel1: "+919811554666",
+        tel2: "+919811354666",
+        name: "Auto Mark India Pvt. Ltd.",
+      };
+    </script>
+    <!-- HEADER -->
+    <header
+      id="hdr"
+      class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-transparent transition"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 h-16 lg:h-20 flex items-center justify-between gap-4"
+      >
+        <a href="index.html" class="flex items-center gap-2.5 shrink-0">
+          <span
+            class="w-10 h-10 rounded-xl bg-deep text-white grid place-items-center"
+          >
+            <i data-lucide="car-front" class="w-5 h-5"></i>
+          </span>
+          <span class="fh font-extrabold text-deep text-lg leading-tight">
+            Auto Mark India<br />
+            <span class="text-xs font-semibold text-purple">Pvt. Ltd.</span>
+          </span>
+        </a>
+        <nav
+          class="hidden lg:flex items-center gap-7 text-sm font-medium text-ink"
+          aria-label="Main"
+        >
+          <a class="hover:text-purple transition" href="index.html">Home</a>
+          <a class="hover:text-purple transition" href="about.html">About Us</a>
+          <a class="hover:text-purple transition" href="services.html"
+            >Our Services</a
+          >
+          <a class="hover:text-purple transition" href="partners.html"
+            >Bank Partners</a
+          >
+          <a class="hover:text-purple transition" href="index.html#faq">FAQs</a>
+          <a class="text-purple font-semibold" href="contact.html">Contact</a>
+        </nav>
+        <div class="hidden lg:flex items-center gap-3">
+          <a
+            data-wa
+            href="#"
+            target="_blank"
+            rel="noopener"
+            class="btn border border-emerald-600 text-emerald-700 hover:bg-emerald-50 !py-2.5"
+          >
+            <i data-lucide="message-circle" class="w-4 h-4"></i>WhatsApp
+          </a>
+          <a href="#contact-form" class="btn btn-p !py-2.5">Apply Now</a>
+        </div>
+        <button
+          id="menuBtn"
+          class="lg:hidden p-2 rounded-lg"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+      <div
+        id="mobMenu"
+        class="hidden lg:hidden border-t bg-white px-4 pb-5 pt-2 space-y-1"
+      >
+        <a class="block py-3 font-medium" href="index.html">Home</a>
+        <a class="block py-3 font-medium" href="about.html">About Us</a>
+        <a class="block py-3 font-medium" href="services.html">Our Services</a>
+        <a class="block py-3 font-medium" href="partners.html">Bank Partners</a>
+        <a class="block py-3 font-medium" href="index.html#faq">FAQs</a>
+        <a
+          class="block py-3 font-medium text-purple font-semibold"
+          href="contact.html"
+          >Contact</a
+        >
+        <div class="grid grid-cols-2 gap-3 pt-3">
+          <a
+            data-wa
+            href="#"
+            target="_blank"
+            rel="noopener"
+            class="btn border border-emerald-600 text-emerald-700"
+            >WhatsApp</a
+          >
+          <a href="#contact-form" class="btn btn-p">Apply Now</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- PAGE HERO -->
+      <section class="relative bg-deep py-16 lg:py-24 overflow-hidden">
+        <div
+          class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-gold/20 blur-3xl"
+        ></div>
+        <div
+          class="absolute -left-24 -bottom-24 w-80 h-80 rounded-full bg-purple/30 blur-3xl"
+        ></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 text-center">
+          <p class="text-xs font-bold tracking-widest text-gold mb-4 uppercase">
+            Contact Us
+          </p>
+          <h1
+            class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight"
+          >
+            We're Here to Help.
+          </h1>
+          <p class="mt-5 text-slate-300 text-lg max-w-2xl mx-auto">
+            Have a question about a loan or insurance? Our team is ready to
+            assist you. Reach out to us via phone, WhatsApp, or the form below.
+          </p>
+        </div>
+      </section>
+      <!-- CONTACT INFO CARDS -->
+      <section class="py-16 lg:py-24 bg-mist">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div
+            class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
+            id="contactCards"
+          ></div>
+        </div>
+      </section>
+      <!-- MAIN CONTACT SECTION: FORM + DETAILS -->
+      <section id="contact-form" class="py-16 lg:py-24">
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-5 gap-10 lg:gap-16 items-start"
+        >
+          <!-- Contact Details -->
+          <div class="lg:col-span-2 space-y-8">
+            <div class="rv">
+              <h2
+                class="text-3xl sm:text-4xl font-extrabold text-deep leading-tight"
+              >
+                Get in Touch.
+              </h2>
+              <p class="mt-4 text-slate2">
+                Our advisors are available to guide you through your financial
+                journey. Whether you're buying a car, a home, or need funds for
+                business, we're just a call away.
+              </p>
+            </div>
+            <div class="space-y-6 rv">
+              <!-- Phone -->
+              <div class="flex gap-4">
+                <span
+                  class="w-12 h-12 rounded-xl bg-purple/10 text-purple grid place-items-center shrink-0"
+                >
+                  <i data-lucide="phone" class="w-6 h-6"></i>
+                </span>
+                <div>
+                  <h4 class="font-bold text-deep fh">Call Us</h4>
+                  <p class="text-sm text-slate2 mt-1">
+                    Mon-Sat, 9:30 AM to 6:30 PM
+                  </p>
+                  <div class="mt-2 space-y-1">
+                    <a
+                      href="tel:+919811554666"
+                      class="block text-lg font-semibold text-purple hover:underline"
+                      >+91 98115 54666</a
+                    >
+                    <a
+                      href="tel:+919811354666"
+                      class="block text-lg font-semibold text-purple hover:underline"
+                      >+91 98113 54666</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Email -->
+              <div class="flex gap-4">
+                <span
+                  class="w-12 h-12 rounded-xl bg-purple/10 text-purple grid place-items-center shrink-0"
+                >
+                  <i data-lucide="mail" class="w-6 h-6"></i>
+                </span>
+                <div>
+                  <h4 class="font-bold text-deep fh">Email Us</h4>
+                  <p class="text-sm text-slate2 mt-1">
+                    We'll respond within 24 hours.
+                  </p>
+                  <div class="mt-2 space-y-1">
+                    <a
+                      href="mailto:Automarkindia2014@gmail.com"
+                      class="block text-sm font-semibold text-purple hover:underline break-all"
+                      >Automarkindia2014@gmail.com</a
+                    >
+                    <a
+                      href="mailto:Automarkindiapvt.ltd@gmail.com"
+                      class="block text-sm font-semibold text-purple hover:underline break-all"
+                      >Automarkindiapvt.ltd@gmail.com</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Address -->
+              <div class="flex gap-4">
+                <span
+                  class="w-12 h-12 rounded-xl bg-purple/10 text-purple grid place-items-center shrink-0"
+                >
+                  <i data-lucide="map-pin" class="w-6 h-6"></i>
+                </span>
+                <div>
+                  <h4 class="font-bold text-deep fh">Visit Our Office</h4>
+                  <p class="text-sm text-slate2 mt-1">
+                    905 Vikrant Tower, New Delhi, Delhi, 110008
+                  </p>
+                  <a
+                    href="https://maps.google.com/?q=905+Vikrant+Tower+New+Delhi"
+                    target="_blank"
+                    rel="noopener"
+                    class="inline-flex items-center gap-1 text-sm font-semibold text-purple mt-2 hover:underline"
+                  >
+                    Get Directions
+                    <i data-lucide="external-link" class="w-3 h-3"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- WhatsApp CTA -->
+            <div
+              class="card rv p-6 bg-emerald-50 border-emerald-100 flex items-center gap-4"
+            >
+              <span
+                class="w-12 h-12 rounded-full bg-emerald-500 text-white grid place-items-center shrink-0"
+              >
+                <i data-lucide="message-circle" class="w-6 h-6"></i>
+              </span>
+              <div>
+                <h4 class="font-bold text-emerald-900 fh">Prefer WhatsApp?</h4>
+                <p class="text-sm text-emerald-800 mt-1">
+                  Chat with us for quick answers.
+                </p>
+                <a
+                  data-wa
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  class="inline-block mt-2 text-sm font-bold text-emerald-600 hover:underline"
+                  >Start Chat &rarr;</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Enquiry Form -->
+          <div class="lg:col-span-3">
+            <div class="card rv p-6 sm:p-8 lg:p-10 shadow-lg border-slate-100">
+              <h3 class="text-2xl font-extrabold text-deep fh mb-6">
+                Send Us an Enquiry
+              </h3>
+              <form
+                id="contactForm"
+                class="enq grid sm:grid-cols-2 gap-4"
+                novalidate
+                data-ok="Thank you! Your enquiry is valid. Our team will contact you shortly."
+              >
+                <div>
+                  <label class="text-sm font-medium" for="c-name"
+                    >Full Name *</label
+                  >
+                  <input
+                    id="c-name"
+                    name="name"
+                    required
+                    class="field mt-1"
+                    placeholder="Your name"
+                    autocomplete="name"
+                  />
+                </div>
+                <div>
+                  <label class="text-sm font-medium" for="c-mob"
+                    >Mobile Number *</label
+                  >
+                  <input
+                    id="c-mob"
+                    name="mobile"
+                    required
+                    inputmode="numeric"
+                    maxlength="10"
+                    class="field mt-1"
+                    placeholder="10-digit mobile"
+                    autocomplete="tel-national"
+                  />
+                </div>
+                <div>
+                  <label class="text-sm font-medium" for="c-mail"
+                    >Email Address *</label
+                  >
+                  <input
+                    id="c-mail"
+                    name="email"
+                    type="email"
+                    required
+                    class="field mt-1"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                  />
+                </div>
+                <div>
+                  <label class="text-sm font-medium" for="c-city">City *</label>
+                  <input
+                    id="c-city"
+                    name="city"
+                    required
+                    class="field mt-1"
+                    placeholder="Your city"
+                    autocomplete="address-level2"
+                  />
+                </div>
+                <div class="sm:col-span-2">
+                  <label class="text-sm font-medium" for="c-service"
+                    >Service Required *</label
+                  >
+                  <select
+                    id="c-service"
+                    name="service"
+                    required
+                    class="field mt-1"
+                  >
+                    <option value="">Select a service</option>
+                    <option>Auto Loan (New/Used Car)</option>
+                    <option>Home Loan</option>
+                    <option>Personal Loan</option>
+                    <option>Business Loan</option>
+                    <option>Loan Against Property</option>
+                    <option>Working Capital</option>
+                    <option>Insurance (Motor/Health/Life)</option>
+                  </select>
+                </div>
+                <div class="sm:col-span-2">
+                  <label class="text-sm font-medium" for="c-msg"
+                    >Message (Optional)</label
+                  >
+                  <textarea
+                    id="c-msg"
+                    name="message"
+                    class="field mt-1"
+                    rows="4"
+                    placeholder="Tell us about your requirements..."
+                  ></textarea>
+                </div>
+                <label class="sm:col-span-2 flex gap-3 text-sm text-slate2">
+                  <input
+                    type="checkbox"
+                    name="consent"
+                    required
+                    class="mt-1 w-4 h-4 accent-royal"
+                  />
+                  <span
+                    >I agree to be contacted by Auto Mark India Pvt. Ltd.
+                    regarding my enquiry. *</span
+                  >
+                </label>
+                <button class="btn btn-p sm:col-span-2" type="submit">
+                  Submit Enquiry <i data-lucide="send" class="w-4 h-4"></i>
+                </button>
+                <p
+                  class="msg sm:col-span-2 hidden rounded-lg bg-emerald-50 text-emerald-800 text-sm p-3"
+                  role="status"
+                ></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MAP SECTION -->
+      <section class="h-80 w-full bg-slate-200 relative">
+        <!-- Placeholder for Google Map -->
+        <div
+          class="absolute inset-0 flex items-center justify-center flex-col text-slate2"
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.9113338250554!2d77.1754318755522!3d28.646000383469033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d031e5b58c393%3A0x5c706c9dd57f5b8d!2sAUTO%20MARK%20INDIA%20PVT%20LTD!5e1!3m2!1sen!2sin!4v1795411925439!5m2!1sen!2sin"
+            width="100%"
+            height="800px"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+        <!-- Actual Map Iframe (Uncomment and use this when ready) <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="bg-deep text-slate-300 pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          <div>
+            <a href="index.html" class="flex items-center gap-2.5 text-white">
+              <span
+                class="w-10 h-10 rounded-xl bg-white/10 grid place-items-center"
+              >
+                <i data-lucide="car-front" class="w-5 h-5"></i>
+              </span>
+              <span class="fh font-extrabold text-lg">Auto Mark India</span>
+            </a>
+            <p class="mt-4 text-sm">
+              Your trusted partner for loans and insurance since 2004. Multiple
+              loans, one trusted partner.
+            </p>
+            <div class="mt-5 flex gap-3">
+              <a
+                href="#"
+                aria-label="Facebook"
+                class="w-9 h-9 rounded-full bg-white/10 grid place-items-center hover:bg-purple transition"
+              >
+                <i data-lucide="facebook" class="w-4 h-4"></i>
+              </a>
+              <a
+                href="#"
+                aria-label="Instagram"
+                class="w-9 h-9 rounded-full bg-white/10 grid place-items-center hover:bg-purple transition"
+              >
+                <i data-lucide="instagram" class="w-4 h-4"></i>
+              </a>
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                class="w-9 h-9 rounded-full bg-white/10 grid place-items-center hover:bg-purple transition"
+              >
+                <i data-lucide="linkedin" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-white font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a class="hover:text-white" href="about.html">About Us</a>
+              </li>
+              <li>
+                <a class="hover:text-white" href="services.html"
+                  >Our Services</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-white" href="partners.html"
+                  >Bank Partners</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-white" href="index.html#faq">FAQs</a>
+              </li>
+              <li>
+                <a class="hover:text-white" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white font-bold mb-4">Our Services</h3>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a class="hover:text-white" href="services.html#auto-loans"
+                  >Auto Loans</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-white" href="services.html#home-loans"
+                  >Home Loans</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-white" href="services.html#personal-loans"
+                  >Personal Loans</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-white" href="services.html#business-loans"
+                  >Business Loans</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-white" href="services.html#lap"
+                  >Loan Against Property</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white font-bold mb-4">Contact Us</h3>
+            <ul class="space-y-3 text-sm">
+              <li class="flex gap-2">
+                <i data-lucide="phone" class="w-4 h-4 mt-0.5 shrink-0"></i>
+                <div>
+                  <a href="tel:+919811554666" class="hover:text-white block"
+                    >9811554666</a
+                  >
+                  <a href="tel:+919811354666" class="hover:text-white block"
+                    >9811354666</a
+                  >
+                </div>
+              </li>
+              <li class="flex gap-2">
+                <i data-lucide="mail" class="w-4 h-4 mt-0.5 shrink-0"></i>
+                <div>
+                  <a
+                    href="mailto:Automarkindia2014@gmail.com"
+                    class="hover:text-white break-all block"
+                    >Automarkindia2014@gmail.com</a
+                  >
+                  <a
+                    href="mailto:Automarkindiapvt.ltd@gmail.com"
+                    class="hover:text-white break-all block"
+                    >Automarkindiapvt.ltd@gmail.com</a
+                  >
+                </div>
+              </li>
+              <li class="flex gap-2">
+                <i data-lucide="map-pin" class="w-4 h-4 mt-0.5 shrink-0"></i>
+                905 Vikrant Tower, New Delhi, Delhi, 110008
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="mt-12 border-t border-white/10 pt-6 text-xs leading-relaxed">
+          <b class="text-white">Disclaimer:</b> Auto Mark India Pvt. Ltd. is not
+          a bank or lending institution. We facilitate connections between
+          customers and our partner banks/NBFCs. All loan approvals, interest
+          rates, eligibility and disbursement decisions are made by the
+          respective lender.
+        </p>
+        <div class="mt-5 flex flex-wrap justify-between gap-3 text-xs">
+          <p>
+            © <span id="yr"></span> Auto Mark India Pvt. Ltd. All rights
+            reserved.
+          </p>
+          <p class="flex gap-4">
+            <a href="#" class="hover:text-white">Privacy Policy</a>
+            <a href="#" class="hover:text-white">Terms &amp; Conditions</a>
+            <a href="#" class="hover:text-white">Disclaimer</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <button
+      id="toTop"
+      aria-label="Back to top"
+      class="fixed bottom-5 right-5 z-40 w-11 h-11 rounded-full bg-purple text-white shadow-lg grid place-items-center opacity-0 pointer-events-none transition"
+    >
+      <i data-lucide="arrow-up" class="w-5 h-5"></i>
+    </button>
+    <script>
+      const $ = (s, r = document) => r.querySelector(s),
+        $$ = (s, r = document) => [...r.querySelectorAll(s)];
+      const ic = (n) => `<i data-lucide="${n}" class="w-6 h-6"></i>`;
+      const render = (id, arr, fn) =>
+        $(id).insertAdjacentHTML("beforeend", arr.map(fn).join(""));
+      /* Contact Info Cards Data */ render(
+        "#contactCards",
+        [
+          {
+            icon: "phone",
+            title: "Call Us",
+            lines: ["+91 98115 54666", "+91 98113 54666"],
+            link: "tel:+919811554666",
+            linkText: "Call Now",
+            color: "purple",
+          },
+          {
+            icon: "mail",
+            title: "Email Us",
+            lines: [
+              "Automarkindia2014@gmail.com",
+              "Automarkindiapvt.ltd@gmail.com",
+            ],
+            link: "mailto:Automarkindia2014@gmail.com",
+            linkText: "Send Email",
+            color: "gold",
+          },
+          {
+            icon: "map-pin",
+            title: "Visit Us",
+            lines: ["905 Vikrant Tower", "New Delhi, Delhi, 110008"],
+            link: "https://maps.google.com/?q=905+Vikrant+Tower+New+Delhi",
+            linkText: "Get Directions",
+            color: "purple",
+          },
+        ],
+        (c, i) =>
+          ` <div class="card rv p-6 flex flex-col items-center text-center" style="transition-delay: ${i * 100}ms"> <span class="w-14 h-14 rounded-full bg-${c.color === "purple" ? "purple" : "gold"}/10 text-${c.color === "purple" ? "purple" : "deep"} grid place-items-center mb-4"> ${ic(c.icon)} </span> <h3 class="fh font-bold text-xl text-deep">${c.title}</h3> <div class="mt-2 mb-4 flex-1"> ${c.lines.map((line) => `<p class="text-sm text-slate2 mt-1 break-all">${line}</p>`).join("")} </div> <a href="${c.link}" target="_blank" rel="noopener" class="text-sm font-semibold text-${c.color === "purple" ? "purple" : "deep"} hover:underline flex items-center gap-1"> ${c.linkText} <i data-lucide="arrow-right" class="w-3 h-3"></i> </a> </div> `,
+      );
+      /* Forms: validation + demo success */ $$(".enq").forEach((f) =>
+        f.addEventListener("submit", (e) => {
+          e.preventDefault();
+          let ok = true;
+          $$("[required]", f).forEach((el) => {
+            let good =
+              el.type === "checkbox" ? el.checked : el.value.trim() !== "";
+            if (good && el.name === "mobile")
+              good = /^[6-9]\d{9}$/.test(el.value.trim());
+            if (good && el.type === "email")
+              good = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value);
+            el.classList.toggle("err", !good);
+            el.setAttribute("aria-invalid", !good);
+            if (!good) ok = false;
+          });
+          const m = $(".msg", f);
+          m.classList.remove("hidden");
+          if (ok) {
+            m.className =
+              "msg sm:col-span-2 rounded-lg bg-emerald-50 text-emerald-800 text-sm p-3";
+            m.textContent = f.dataset.ok;
+            f.reset();
+          } else {
+            m.className =
+              "msg sm:col-span-2 rounded-lg bg-red-50 text-red-700 text-sm p-3";
+            m.textContent =
+              "Please complete the highlighted fields. Mobile must be a valid 10-digit Indian number.";
+          }
+        }),
+      );
+      $$(".field").forEach((el) =>
+        el.addEventListener("input", () => el.classList.remove("err")),
+      );
+      /* Contact links, menu, scroll effects */ $$("[data-wa]").forEach(
+        (a) =>
+          (a.href = `https://wa.me/${CFG.wa}?text=${encodeURIComponent("Hi, I would like to enquire about a loan with Auto Mark India Pvt. Ltd.")}`),
+      );
+      $$("[data-tel]").forEach((a) => (a.href = "tel:" + CFG.tel1));
+      $("#yr").textContent = new Date().getFullYear();
+      const mb = $("#menuBtn"),
+        mm = $("#mobMenu");
+      mb.addEventListener("click", () => {
+        const o = mm.classList.toggle("hidden") === false;
+        mb.setAttribute("aria-expanded", o);
+      });
+      const hdr = $("#hdr"),
+        tt = $("#toTop");
+      addEventListener(
+        "scroll",
+        () => {
+          const y = scrollY > 20;
+          hdr.classList.toggle("shadow-md", y);
+          hdr.classList.toggle("border-slate-100", y);
+          const s = scrollY > 600;
+          tt.classList.toggle("opacity-0", !s);
+          tt.classList.toggle("pointer-events-none", !s);
+        },
+        { passive: true },
+      );
+      tt.addEventListener("click", () =>
+        scrollTo({ top: 0, behavior: "smooth" }),
+      );
+      const io = new IntersectionObserver(
+        (es) =>
+          es.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("in");
+              io.unobserve(e.target);
+            }
+          }),
+        { threshold: 0.12 },
+      );
+      $$(".rv").forEach((el) => io.observe(el));
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
+```

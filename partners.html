@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bank Partners | Auto Mark India Pvt. Ltd.</title>
+    <meta
+      name="description"
+      content="Explore our network of 14+ trusted bank and NBFC partners including ICICI, HDFC, Axis, Tata Capital, Bajaj Finance, and more."
+    />
+    <meta
+      property="og:title"
+      content="Bank Partners | Auto Mark India Pvt. Ltd."
+    />
+    <meta
+      property="og:description"
+      content="We work with leading banks and NBFCs to bring you the best loan and insurance options."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=70"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@0.383.0/dist/umd/lucide.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: "#063B60",
+              deep: "#2D1B69",
+              purple: "#5B3E96",
+              gold: "#D4AF37",
+              mist: "#F8F6FC",
+              ink: "#152D40",
+              slate2: "#64748B",
+            },
+            fontFamily: {
+              head: ["Manrope", "sans-serif"],
+              body: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 80px;
+      }
+      body {
+        font-family: Inter, sans-serif;
+        color: #152d40;
+        overflow-x: hidden;
+      }
+      h1,
+      h2,
+      h3,
+      .fh {
+        font-family: Manrope, sans-serif;
+        letter-spacing: -0.02em;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        border-radius: 12px;
+        padding: 0.8rem 1.4rem;
+        font-weight: 600;
+        transition: 0.2s;
+        cursor: pointer;
+      }
+      .btn-p {
+        background: #5b3e96;
+        color: #fff;
+      }
+      .btn-p:hover {
+        background: #4a2f7a;
+        transform: translateY(-1px);
+      }
+      .btn-gold {
+        background: #d4af37;
+        color: #2d1b69;
+      }
+      .btn-gold:hover {
+        background: #b5952f;
+        transform: translateY(-1px);
+      }
+      .card {
+        background: #fff;
+        border: 1px solid #e2eaf2;
+        border-radius: 20px;
+        transition: 0.25s;
+      }
+      .card:hover {
+        box-shadow: 0 18px 40px -20px rgba(45, 27, 105, 0.3);
+        transform: translateY(-3px);
+      }
+      .rv {
+        opacity: 0;
+        transform: translateY(18px);
+        transition: 0.7s;
+      }
+      .rv.in {
+        opacity: 1;
+        transform: none;
+      }
+      .img-fb {
+        background: linear-gradient(135deg, #2d1b69, #5b3e96);
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .rv {
+          opacity: 1;
+          transform: none;
+          transition: none;
+        }
+        html {
+          scroll-behavior: auto;
+        }
+      }
+      :focus-visible {
+        outline: 2px solid #5b3e96;
+        outline-offset: 2px;
+      }
+      /* Partner Logo Placeholder Styling */
+      .partner-logo-box {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        border-radius: 12px;
+        border: 1px solid #f1f5f9;
+        transition: 0.3s;
+        padding: 1rem;
+      }
+      .partner-logo-box:hover {
+        border-color: #5b3e96;
+        box-shadow: 0 4px 12px rgba(91, 62, 150, 0.1);
+      }
+      .partner-logo-text {
+        font-family: Manrope, sans-serif;
+        font-weight: 800;
+        font-size: 1.1rem;
+        color: #2d1b69;
+        text-align: center;
+        line-height: 1.2;
+        letter-spacing: -0.01em;
+      }
+    </style>
+  </head>
+  <body class="bg-white antialiased">
+    <script>
+      const CFG = {
+        wa: "919811554666",
+        tel1: "+919811554666",
+        name: "Auto Mark India Pvt. Ltd.",
+      };
+    </script>
+    <!-- HEADER -->
+    <header
+      id="hdr"
+      class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-transparent transition"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 h-16 lg:h-20 flex items-center justify-between gap-4"
+      >
+        <a href="index.html" class="flex items-center gap-2.5 shrink-0">
+          <span
+            class="w-10 h-10 rounded-xl bg-deep text-white grid place-items-center"
+          >
+            <i data-lucide="car-front" class="w-5 h-5"></i>
+          </span>
+          <span class="fh font-extrabold text-deep text-lg leading-tight">
+            Auto Mark India<br />
+            <span class="text-xs font-semibold text-purple">Pvt. Ltd.</span>
+          </span>
+        </a>
+        <nav
+          class="hidden lg:flex items-center gap-7 text-sm font-medium text-ink"
+          aria-label="Main"
+        >
+          <a class="hover:text-purple transition" href="index.html">Home</a>
+          <a class="hover:text-purple transition" href="about.html">About Us</a>
+          <a class="hover:text-purple transition" href="services.html"
+            >Our Services</a
+          >
+          <a class="text-purple font-semibold" href="partners.html"
+            >Bank Partners</a
+          >
+          <a class="hover:text-purple transition" href="index.html#faq">FAQs</a>
+          <a class="hover:text-purple transition" href="index.html#contact"
+            >Contact</a
+          >
+        </nav>
+        <div class="hidden lg:flex items-center gap-3">
+          <a
+            data-wa
+            href="#"
+            target="_blank"
+            rel="noopener"
+            class="btn border border-emerald-600 text-emerald-700 hover:bg-emerald-50 !py-2.5"
+          >
+            <i data-lucide="message-circle" class="w-4 h-4"></i>WhatsApp
+          </a>
+          <a href="index.html#contact" class="btn btn-p !py-2.5">Apply Now</a>
+        </div>
+        <button
+          id="menuBtn"
+          class="lg:hidden p-2 rounded-lg"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+      <div
+        id="mobMenu"
+        class="hidden lg:hidden border-t bg-white px-4 pb-5 pt-2 space-y-1"
+      >
+        <a class="block py-3 font-medium" href="index.html">Home</a>
+        <a class="block py-3 font-medium" href="about.html">About Us</a>
+        <a class="block py-3 font-medium" href="services.html">Our Services</a>
+        <a
+          class="block py-3 font-medium text-purple font-semibold"
+          href="partners.html"
+          >Bank Partners</a
+        >
+        <a class="block py-3 font-medium" href="index.html#faq">FAQs</a>
+        <a class="block py-3 font-medium" href="index.html#contact">Contact</a>
+        <div class="grid grid-cols-2 gap-3 pt-3">
+          <a
+            data-wa
+            href="#"
+            target="_blank"
+            rel="noopener"
+            class="btn border border-emerald-600 text-emerald-700"
+            >WhatsApp</a
+          >
+          <a href="index.html#contact" class="btn btn-p">Apply Now</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- PAGE HERO -->
+      <section class="relative bg-deep py-16 lg:py-24 overflow-hidden">
+        <div
+          class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-gold/20 blur-3xl"
+        ></div>
+        <div
+          class="absolute -left-24 -bottom-24 w-80 h-80 rounded-full bg-purple/30 blur-3xl"
+        ></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 text-center">
+          <p class="text-xs font-bold tracking-widest text-gold mb-4 uppercase">
+            Our Partners
+          </p>
+          <h1
+            class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight"
+          >
+            Trusted Banks. Unmatched Choice.
+          </h1>
+          <p class="mt-5 text-slate-300 text-lg max-w-2xl mx-auto">
+            We have partnered with India's leading banks and NBFCs to ensure you
+            get the most competitive rates and flexible terms for your loans.
+          </p>
+        </div>
+      </section>
+      <!-- PARTNERS GRID -->
+      <section class="py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="text-center max-w-2xl mx-auto mb-12 rv">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-deep">
+              Our Lending Network
+            </h2>
+            <p class="mt-4 text-slate2">
+              14+ trusted financial institutions at your service.
+            </p>
+          </div>
+          <!-- Filter Tabs (Optional - visually appealing) -->
+          <div
+            class="flex flex-wrap justify-center gap-2 mb-10 rv"
+            id="partnerFilters"
+          >
+            <button
+              class="filter-btn active px-4 py-2 rounded-full text-sm font-semibold bg-purple text-white"
+              data-filter="all"
+            >
+              All Partners
+            </button>
+            <button
+              class="filter-btn px-4 py-2 rounded-full text-sm font-semibold bg-white text-slate2 border border-slate-200 hover:border-purple hover:text-purple transition"
+              data-filter="bank"
+            >
+              Banks
+            </button>
+            <button
+              class="filter-btn px-4 py-2 rounded-full text-sm font-semibold bg-white text-slate2 border border-slate-200 hover:border-purple hover:text-purple transition"
+              data-filter="nbfc"
+            >
+              NBFCs
+            </button>
+          </div>
+          <div
+            id="partnerGrid"
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6"
+          ></div>
+        </div>
+      </section>
+      <!-- WHY OUR PARTNERSHIPS MATTER -->
+      <section class="py-16 lg:py-24 bg-mist">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="rv">
+              <h2
+                class="text-3xl sm:text-4xl font-extrabold text-deep leading-tight"
+              >
+                Why Our Partnerships Matter to You.
+              </h2>
+              <p class="mt-5 text-slate2 text-lg">
+                Having multiple partners means you don't have to settle for the
+                first offer you get. We compare and negotiate to find the best
+                fit for your profile.
+              </p>
+              <ul class="mt-8 space-y-4">
+                <li class="flex gap-4">
+                  <span
+                    class="w-10 h-10 rounded-full bg-white shadow-sm text-purple flex items-center justify-center shrink-0"
+                  >
+                    <i data-lucide="percent" class="w-5 h-5"></i>
+                  </span>
+                  <div>
+                    <h4 class="font-bold fh text-deep">
+                      Competitive Interest Rates
+                    </h4>
+                    <p class="text-sm text-slate2 mt-1">
+                      We help you find the lowest possible rates from our
+                      partner banks.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <span
+                    class="w-10 h-10 rounded-full bg-white shadow-sm text-purple flex items-center justify-center shrink-0"
+                  >
+                    <i data-lucide="check-circle" class="w-5 h-5"></i>
+                  </span>
+                  <div>
+                    <h4 class="font-bold fh text-deep">
+                      Higher Approval Chances
+                    </h4>
+                    <p class="text-sm text-slate2 mt-1">
+                      If one bank rejects, we have 13 other options to explore
+                      for you.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <span
+                    class="w-10 h-10 rounded-full bg-white shadow-sm text-purple flex items-center justify-center shrink-0"
+                  >
+                    <i data-lucide="sliders" class="w-5 h-5"></i>
+                  </span>
+                  <div>
+                    <h4 class="font-bold fh text-deep">Flexible Terms</h4>
+                    <p class="text-sm text-slate2 mt-1">
+                      Choose from different tenures, processing fees, and
+                      repayment structures.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="relative rv">
+              <img
+                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1000&q=70"
+                alt="Business meeting"
+                class="w-full rounded-3xl shadow-xl object-cover aspect-[4/3] img-fb"
+              />
+              <div
+                class="absolute -bottom-6 -right-6 bg-white p-4 rounded-2xl shadow-lg border border-slate-100 hidden sm:flex items-center gap-4"
+              >
+                <span
+                  class="w-12 h-12 rounded-full bg-gold/20 text-gold grid place-items-center"
+                >
+                  <i data-lucide="shield-check" class="w-6 h-6"></i>
+                </span>
+                <div>
+                  <p class="fh font-bold text-deep">100% Transparent</p>
+                  <p class="text-xs text-slate2">No hidden charges</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA -->
+      <section class="py-16 lg:py-24 bg-navy text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          <h2 class="text-3xl sm:text-5xl font-extrabold leading-tight">
+            Let's Find Your Perfect Loan Match.
+          </h2>
+          <p class="mt-5 text-slate-200 text-lg">
+            Share your details and our team will compare offers from our partner
+            banks to find the best deal for you.
+          </p>
+          <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <a href="index.html#contact" class="btn btn-gold">
+              <i data-lucide="search" class="w-5 h-5"></i>Compare Loan Offers
+            </a>
+            <a
+              data-tel
+              href="#"
+              class="btn bg-white text-navy hover:bg-slate-100"
+            >
+              <i data-lucide="phone" class="w-5 h-5"></i>Call: 9811554666
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="bg-deep text-slate-300 pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          <div>
+            <a href="index.html" class="flex items-center gap-2.5 text-white">
+              <span
+                class="w-10 h-10 rounded-xl bg-white/10 grid place-items-center"
+              >
+                <i data-lucide="car-front" class="w-5 h-5"></i>
+              </span>
+              <span class="fh font-extrabold text-lg">Auto Mark India</span>
+            </a>
+            <p class="mt-4 text-sm">
+              Your trusted partner for loans and insurance since 2004. Multiple
+              loans, one trusted partner.
+            </p>
+            <div class="mt-5 flex gap-3">
+              <a
+                href="#"
+                aria-label="Facebook"
+                class="w-9 h-9 rounded-full bg-white/10 grid place-items-center hover:bg-purple transition"
+              >
+                <i data-lucide="facebook" class="w-4 h-4"></i>
+              </a>
+              <a
+                href="#"
+                aria-label="Instagram"
+                class="w-9 h-9 rounded-full bg-white/10 grid place-items-center hover:bg-purple transition"
+              >
+                <i data-lucide="instagram" class="w-4 h-4"></i>
+              </a>
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                class="w-9 h-9 rounded-full bg-white/10 grid place-items-center hover:bg-purple transition"
+              >
+                <i data-lucide="linkedin" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-white font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a class="hover:text-white" href="about.html">About Us</a>
+              </li>
+              <li>
+                <a class="hover:text-white" href="services.html"
+                  >Our Services</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-white" href="partners.html"
+                  >Bank Partners</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-white" href="index.html#faq">FAQs</a>
+              </li>
+              <li>
+                <a class="hover:text-white" href="index.html#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white font-bold mb-4">Our Services</h3>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a class="hover:text-white" href="services.html#auto-loans"
+                  >Auto Loans</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-white" href="services.html#home-loans"
+                  >Home Loans</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-white" href="services.html#personal-loans"
+                  >Personal Loans</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-white" href="services.html#business-loans"
+                  >Business Loans</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-white" href="services.html#lap"
+                  >Loan Against Property</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white font-bold mb-4">Contact Us</h3>
+            <ul class="space-y-3 text-sm">
+              <li class="flex gap-2">
+                <i data-lucide="phone" class="w-4 h-4 mt-0.5 shrink-0"></i>
+                <div>
+                  <a href="tel:+919811554666" class="hover:text-white block"
+                    >9811554666</a
+                  >
+                  <a href="tel:+919811354666" class="hover:text-white block"
+                    >9811354666</a
+                  >
+                </div>
+              </li>
+              <li class="flex gap-2">
+                <i data-lucide="mail" class="w-4 h-4 mt-0.5 shrink-0"></i>
+                <div>
+                  <a
+                    href="mailto:Automarkindia2014@gmail.com"
+                    class="hover:text-white break-all block"
+                    >Automarkindia2014@gmail.com</a
+                  >
+                  <a
+                    href="mailto:Automarkindiapvt.ltd@gmail.com"
+                    class="hover:text-white break-all block"
+                    >Automarkindiapvt.ltd@gmail.com</a
+                  >
+                </div>
+              </li>
+              <li class="flex gap-2">
+                <i data-lucide="map-pin" class="w-4 h-4 mt-0.5 shrink-0"></i>
+                905 Vikrant Tower, New Delhi, Delhi, 110008
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="mt-12 border-t border-white/10 pt-6 text-xs leading-relaxed">
+          <b class="text-white">Disclaimer:</b> Auto Mark India Pvt. Ltd. is not
+          a bank or lending institution. We facilitate connections between
+          customers and our partner banks/NBFCs. All loan approvals, interest
+          rates, eligibility and disbursement decisions are made by the
+          respective lender.
+        </p>
+        <div class="mt-5 flex flex-wrap justify-between gap-3 text-xs">
+          <p>
+            © <span id="yr"></span> Auto Mark India Pvt. Ltd. All rights
+            reserved.
+          </p>
+          <p class="flex gap-4">
+            <a href="#" class="hover:text-white">Privacy Policy</a>
+            <a href="#" class="hover:text-white">Terms &amp; Conditions</a>
+            <a href="#" class="hover:text-white">Disclaimer</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <button
+      id="toTop"
+      aria-label="Back to top"
+      class="fixed bottom-5 right-5 z-40 w-11 h-11 rounded-full bg-purple text-white shadow-lg grid place-items-center opacity-0 pointer-events-none transition"
+    >
+      <i data-lucide="arrow-up" class="w-5 h-5"></i>
+    </button>
+    <script>
+      const $ = (s, r = document) => r.querySelector(s);
+      const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+
+      const ic = (n) => `<i data-lucide="${n}" class="w-6 h-6"></i>`;
+
+      /* Partners Data */
+      const PARTNERS = [
+        { name: "ICICI Bank", type: "bank", color: "text-[#F37E20]" },
+        { name: "HDFC Bank", type: "bank", color: "text-[#004B8D]" },
+        { name: "Axis Bank", type: "bank", color: "text-[#97144D]" },
+        { name: "Bandhan Bank", type: "bank", color: "text-[#ED1C24]" },
+        { name: "Saraswat Bank", type: "bank", color: "text-[#F58220]" },
+        { name: "Federal Bank", type: "bank", color: "text-[#FFC20E]" },
+        {
+          name: "AU Small Finance Bank",
+          type: "bank",
+          color: "text-[#F15A22]",
+        },
+        {
+          name: "Jana Small Finance Bank",
+          type: "bank",
+          color: "text-[#00A651]",
+        },
+        { name: "Tata Capital", type: "nbfc", color: "text-[#004B8D]" },
+        { name: "Poonawalla", type: "nbfc", color: "text-[#004B8D]" },
+        { name: "Kogta Financials", type: "nbfc", color: "text-[#F15A22]" },
+        { name: "SK Financials", type: "nbfc", color: "text-[#004B8D]" },
+        { name: "Piramal", type: "nbfc", color: "text-[#004B8D]" },
+        { name: "Bajaj Finance", type: "nbfc", color: "text-[#004B8D]" },
+      ];
+
+      /* Partners Rendering */
+      function renderPartners(filter = "all") {
+        const grid = $("#partnerGrid");
+
+        if (!grid) return;
+
+        const filtered =
+          filter === "all"
+            ? PARTNERS
+            : PARTNERS.filter((p) => p.type === filter);
+
+        grid.innerHTML = filtered
+          .map(
+            (p, i) => `
+        <div class="card rv p-4 flex flex-col items-center justify-center text-center gap-3"
+             style="transition-delay: ${i * 50}ms">
+
+            <div class="partner-logo-box">
+                <span class="partner-logo-text ${p.color}">
+                    ${p.name}
+                </span>
+            </div>
+
+            <span class="text-xs font-medium px-2.5 py-1 rounded-full
+                ${
+                  p.type === "bank"
+                    ? "bg-blue-50 text-blue-700"
+                    : "bg-purple-50 text-purple-700"
+                }">
+                ${p.type === "bank" ? "Bank" : "NBFC"}
+            </span>
+
+        </div>
+    `,
+          )
+          .join("");
+
+        $$(".rv", grid).forEach((el) => {
+          io.observe(el);
+        });
+      }
+
+      /* Scroll Animation */
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("in");
+              io.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.12,
+        },
+      );
+
+      /* Initial Partners */
+      renderPartners();
+
+      /* Partner Filters */
+      $$(".filter-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          $$(".filter-btn").forEach((b) => {
+            b.classList.remove("bg-purple", "text-white", "active");
+            b.classList.add(
+              "bg-white",
+              "text-slate2",
+              "border",
+              "border-slate-200",
+              "hover:border-purple",
+              "hover:text-purple",
+            );
+          });
+
+          btn.classList.remove(
+            "bg-white",
+            "text-slate2",
+            "border",
+            "border-slate-200",
+            "hover:border-purple",
+            "hover:text-purple",
+          );
+
+          btn.classList.add("bg-purple", "text-white", "active");
+
+          renderPartners(btn.dataset.filter);
+        });
+      });
+
+      /* Contact Links */
+      $$("[data-wa]").forEach((a) => {
+        a.href = `https://wa.me/${CFG.wa}?text=${encodeURIComponent(
+          "Hi, I would like to enquire about a loan with Auto Mark India Pvt. Ltd.",
+        )}`;
+      });
+
+      $$("[data-tel]").forEach((a) => {
+        a.href = "tel:" + CFG.tel1;
+      });
+
+      /* Current Year */
+      const year = $("#yr");
+
+      if (year) {
+        year.textContent = new Date().getFullYear();
+      }
+
+      /* Mobile Menu */
+      const mb = $("#menuBtn");
+      const mm = $("#mobMenu");
+
+      if (mb && mm) {
+        mb.addEventListener("click", () => {
+          const isOpen = mm.classList.toggle("hidden") === false;
+          mb.setAttribute("aria-expanded", isOpen);
+        });
+      }
+
+      /* Header & Back To Top */
+      const hdr = $("#hdr");
+      const tt = $("#toTop");
+
+      addEventListener(
+        "scroll",
+        () => {
+          const y = scrollY > 20;
+
+          if (hdr) {
+            hdr.classList.toggle("shadow-md", y);
+            hdr.classList.toggle("border-slate-100", y);
+          }
+
+          const showTop = scrollY > 600;
+
+          if (tt) {
+            tt.classList.toggle("opacity-0", !showTop);
+            tt.classList.toggle("pointer-events-none", !showTop);
+          }
+        },
+        { passive: true },
+      );
+
+      if (tt) {
+        tt.addEventListener("click", () => {
+          scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+      }
+
+      /* Observe Existing Elements */
+      $$(".rv").forEach((el) => io.observe(el));
+
+      /* Lucide Icons */
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    </script>
+  </body>
+</html>
