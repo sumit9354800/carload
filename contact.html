@@ -163,15 +163,11 @@
         class="max-w-7xl mx-auto px-4 sm:px-6 h-16 lg:h-20 flex items-center justify-between gap-4"
       >
         <a href="index.html" class="flex items-center gap-2.5 shrink-0">
-          <span
-            class="w-10 h-10 rounded-xl bg-deep text-white grid place-items-center"
-          >
-            <i data-lucide="car-front" class="w-5 h-5"></i>
-          </span>
-          <span class="fh font-extrabold text-deep text-lg leading-tight">
-            Auto Mark India<br />
-            <span class="text-xs font-semibold text-purple">Pvt. Ltd.</span>
-          </span>
+          <img
+            src="images/auto-mark-logo-navbar.png"
+            alt="Auto Mark India Pvt. Ltd. Logo"
+            class="h-10 lg:h-12 w-auto object-contain"
+          />
         </a>
         <nav
           class="hidden lg:flex items-center gap-7 text-sm font-medium text-ink"
@@ -185,8 +181,10 @@
           <a class="hover:text-purple transition" href="partners.html"
             >Bank Partners</a
           >
-          <a class="hover:text-purple transition" href="index.html#faq">FAQs</a>
-          <a class="text-purple font-semibold" href="contact.html">Contact</a>
+          <a class="hover:text-purple transition" href="#faq">FAQs</a>
+          <a class="hover:text-purple transition" href="contact.html"
+            >Contact</a
+          >
         </nav>
         <div class="hidden lg:flex items-center gap-3">
           <a
@@ -198,7 +196,7 @@
           >
             <i data-lucide="message-circle" class="w-4 h-4"></i>WhatsApp
           </a>
-          <a href="#contact-form" class="btn btn-p !py-2.5">Apply Now</a>
+          <a href="#contact" class="btn btn-p !py-2.5">Apply Now</a>
         </div>
         <button
           id="menuBtn"
@@ -213,16 +211,12 @@
         id="mobMenu"
         class="hidden lg:hidden border-t bg-white px-4 pb-5 pt-2 space-y-1"
       >
-        <a class="block py-3 font-medium" href="index.html">Home</a>
-        <a class="block py-3 font-medium" href="about.html">About Us</a>
-        <a class="block py-3 font-medium" href="services.html">Our Services</a>
-        <a class="block py-3 font-medium" href="partners.html">Bank Partners</a>
-        <a class="block py-3 font-medium" href="index.html#faq">FAQs</a>
-        <a
-          class="block py-3 font-medium text-purple font-semibold"
-          href="contact.html"
-          >Contact</a
-        >
+        <a class="block py-3 font-medium" href="#home">Home</a>
+        <a class="block py-3 font-medium" href="#about">About Us</a>
+        <a class="block py-3 font-medium" href="#services">Our Services</a>
+        <a class="block py-3 font-medium" href="#partners">Bank Partners</a>
+        <a class="block py-3 font-medium" href="#faq">FAQs</a>
+        <a class="block py-3 font-medium" href="#contact">Contact</a>
         <div class="grid grid-cols-2 gap-3 pt-3">
           <a
             data-wa
@@ -232,7 +226,7 @@
             class="btn border border-emerald-600 text-emerald-700"
             >WhatsApp</a
           >
-          <a href="#contact-form" class="btn btn-p">Apply Now</a>
+          <a href="#contact" class="btn btn-p">Apply Now</a>
         </div>
       </div>
     </header>
@@ -531,17 +525,16 @@
       </section>
     </main>
     <!-- FOOTER -->
-    <footer class="bg-deep text-slate-300 pt-16 pb-8">
+     <footer class="bg-deep text-slate-300 pt-16 pb-8">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <a href="index.html" class="flex items-center gap-2.5 text-white">
-              <span
-                class="w-10 h-10 rounded-xl bg-white/10 grid place-items-center"
-              >
-                <i data-lucide="car-front" class="w-5 h-5"></i>
-              </span>
-              <span class="fh font-extrabold text-lg">Auto Mark India</span>
+            <a href="index.html" class="flex items-center gap-2.5 lg-white">
+              <img
+                src="images/auto-mark-logo-footer.png"
+                alt="Auto Mark India Logo"
+                class="h-10 w-50 object-contain bg-white/100 rounded-xl p-1"
+              />
             </a>
             <p class="mt-4 text-sm">
               Your trusted partner for loans and insurance since 2004. Multiple
@@ -574,52 +567,34 @@
           <div>
             <h3 class="text-white font-bold mb-4">Quick Links</h3>
             <ul class="space-y-2 text-sm">
+              <li><a class="hover:text-white" href="#about">About Us</a></li>
               <li>
-                <a class="hover:text-white" href="about.html">About Us</a>
+                <a class="hover:text-white" href="#services">Our Services</a>
               </li>
               <li>
-                <a class="hover:text-white" href="services.html"
-                  >Our Services</a
-                >
+                <a class="hover:text-white" href="#partners">Bank Partners</a>
               </li>
-              <li>
-                <a class="hover:text-white" href="partners.html"
-                  >Bank Partners</a
-                >
-              </li>
-              <li>
-                <a class="hover:text-white" href="index.html#faq">FAQs</a>
-              </li>
-              <li>
-                <a class="hover:text-white" href="contact.html">Contact</a>
-              </li>
+              <li><a class="hover:text-white" href="#faq">FAQs</a></li>
+              <li><a class="hover:text-white" href="#contact">Contact</a></li>
             </ul>
           </div>
           <div>
             <h3 class="text-white font-bold mb-4">Our Services</h3>
             <ul class="space-y-2 text-sm">
               <li>
-                <a class="hover:text-white" href="services.html#auto-loans"
-                  >Auto Loans</a
-                >
+                <a class="hover:text-white" href="#services">Auto Loans</a>
               </li>
               <li>
-                <a class="hover:text-white" href="services.html#home-loans"
-                  >Home Loans</a
-                >
+                <a class="hover:text-white" href="#services">Home Loans</a>
               </li>
               <li>
-                <a class="hover:text-white" href="services.html#personal-loans"
-                  >Personal Loans</a
-                >
+                <a class="hover:text-white" href="#services">Personal Loans</a>
               </li>
               <li>
-                <a class="hover:text-white" href="services.html#business-loans"
-                  >Business Loans</a
-                >
+                <a class="hover:text-white" href="#services">Business Loans</a>
               </li>
               <li>
-                <a class="hover:text-white" href="services.html#lap"
+                <a class="hover:text-white" href="#services"
                   >Loan Against Property</a
                 >
               </li>

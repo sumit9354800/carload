@@ -176,16 +176,12 @@
       <div
         class="max-w-7xl mx-auto px-4 sm:px-6 h-16 lg:h-20 flex items-center justify-between gap-4"
       >
-        <a href="#home" class="flex items-center gap-2.5 shrink-0">
-          <span
-            class="w-10 h-10 rounded-xl bg-deep text-white grid place-items-center"
-          >
-            <i data-lucide="car-front" class="w-5 h-5"></i>
-          </span>
-          <span class="fh font-extrabold text-deep text-lg leading-tight">
-            Auto Mark India<br />
-            <span class="text-xs font-semibold text-purple">Pvt. Ltd.</span>
-          </span>
+        <a href="index.html" class="flex items-center gap-2.5 shrink-0">
+          <img
+            src="images/auto-mark-logo-navbar.png"
+            alt="Auto Mark India Pvt. Ltd. Logo"
+            class="h-10 lg:h-12 w-auto object-contain"
+          />
         </a>
         <nav
           class="hidden lg:flex items-center gap-7 text-sm font-medium text-ink"
@@ -200,7 +196,9 @@
             >Bank Partners</a
           >
           <a class="hover:text-purple transition" href="#faq">FAQs</a>
-          <a class="hover:text-purple transition" href="contact.html">Contact</a>
+          <a class="hover:text-purple transition" href="contact.html"
+            >Contact</a
+          >
         </nav>
         <div class="hidden lg:flex items-center gap-3">
           <a
@@ -683,13 +681,12 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <a href="#home" class="flex items-center gap-2.5 text-white">
-              <span
-                class="w-10 h-10 rounded-xl bg-white/10 grid place-items-center"
-              >
-                <i data-lucide="car-front" class="w-5 h-5"></i>
-              </span>
-              <span class="fh font-extrabold text-lg">Auto Mark India</span>
+            <a href="index.html" class="flex items-center gap-2.5 lg-white">
+              <img
+                src="images/auto-mark-logo-footer.png"
+                alt="Auto Mark India Logo"
+                class="h-10 w-50 object-contain bg-white/100 rounded-xl p-1"
+              />
             </a>
             <p class="mt-4 text-sm">
               Your trusted partner for loans and insurance since 2004. Multiple
@@ -887,7 +884,256 @@
         ],
         (c) =>
           `<div class="card rv p-6"><span class="w-12 h-12 rounded-xl bg-mist text-purple grid place-items-center mb-5">${ic(c[0])}</span><h3 class="fh font-bold text-lg text-deep">${c[1]}</h3><p class="mt-2 text-sm text-slate2">${c[2]}</p></div>`,
-      );   render( "#serviceCards", [ { t: "Auto Loans", d: "Finance for new and used cars from top partners.", i: "car", }, { t: "Home Loans", d: "Step into your dream home with flexible tenure options.", i: "home", }, { t: "Personal Loans", d: "Quick funds for weddings, travel, or emergencies.", i: "user", }, { t: "Business Loans", d: "Fuel your business growth with tailored financing.", i: "briefcase", }, { t: "Loan Against Property", d: "Unlock the value of your property for immediate funds.", i: "landmark", }, { t: "Working Capital", d: "Manage daily operations with seamless funding.", i: "trending-up", }, { t: "Insurance (Motor/Health/Life)", d: "Protect what matters most with comprehensive coverage.", i: "shield-check", }, { t: "Used Car Loans", d: "Specialized financing for pre-owned vehicles.", i: "history", }, ], (c) => `<div class="card rv p-6 flex flex-col"> <span class="w-12 h-12 rounded-xl bg-purple/10 text-purple grid place-items-center mb-5">${ic(c.i)}</span> <h3 class="fh font-bold text-lg text-deep">${c.t}</h3> <p class="mt-2 text-sm text-slate2 flex-1">${c.d}</p> <a href="#contact" class="mt-4 text-sm font-semibold text-purple hover:underline">Apply Now →</a> </div>`, );   const PARTNERS = [ "ICICI Bank", "HDFC Bank", "Axis Bank", "Bandhan Bank", "Saraswat Bank", "Federal Bank", "AU Small Finance Bank", "Tata Capital", "Poonawalla", "Kogta Financials", "SK Financials", "Jana Small Finance Bank", "Piramal", "Bajaj Finance", ]; render( "#partnerGrid", PARTNERS, (p) => `<div class="card rv p-4 flex items-center justify-center text-center bg-white shadow-sm hover:shadow-md transition"> <span class="fh font-bold text-sm text-slate2">${p}</span> </div>`, ); render( "#steps", [ [ "Submit Enquiry", "Share your details and loan requirements via our form or WhatsApp.", ], [ "Expert Consultation", "Our team reviews your profile and matches you with suitable lenders.", ], [ "Documentation", "We guide you through the paperwork and verification process.", ], [ "Disbursement", "Receive the funds and achieve your financial goals.", ], ], (s, i) => `<div class="relative text-center rv" style="transition-delay:${i * 150}ms"><span class="relative z-10 mx-auto w-16 h-16 rounded-full bg-purple text-white fh text-xl font-extrabold grid place-items-center ring-8 ring-white shadow-lg">0${i + 1}</span><h3 class="fh font-bold text-xl text-deep mt-5">${s[0]}</h3><p class="mt-2 text-sm text-slate2 max-w-xs mx-auto">${s[1]}</p></div>`, ); render( "#testi", [ [ "Rahul Sharma", "Delhi", "Auto Mark made my car loan process incredibly smooth. Got a great interest rate from ICICI.", ], [ "Priya Singh", "Mumbai", "I was confused about home loans. Their advisor patiently explained everything and found the best option.", ], [ "Vikram Patel", "Bengaluru", "Trustworthy and transparent. They have been my go-to financial partner for years.", ], ], (t) => `<figure class="card rv p-6 flex flex-col"><div class="flex text-amber-400 gap-0.5" aria-label="5 out of 5 stars">${'<i data-lucide="star" class="w-4 h-4 fill-current"></i>'.repeat(5)}</div><blockquote class="mt-4 text-ink flex-1">“${t[2]}”</blockquote><figcaption class="mt-6 flex items-center gap-3"><span class="w-11 h-11 rounded-full bg-purple/10 text-purple grid place-items-center font-bold text-lg">${t[0][0]}</span><div><p class="fh font-bold text-sm text-deep">${t[0]}</p><p class="text-xs text-slate2">${t[1]}</p></div></figcaption></figure>`, ); const FAQ = [ [ "What services does Auto Mark India Pvt. Ltd. provide?", "We provide facilitation for Auto Loans (New & Used), Home Loans, Personal Loans, Business Loans, Loan Against Property, Working Capital, and Insurance (Motor, Health, Life).", ], [ "Are you a bank or NBFC?", "No. We are a Direct Selling Agent (DSA) and loan facilitation partner. We connect you with our partner banks and NBFCs. All lending decisions are made by the respective lender.", ], [ "Which banks and NBFCs are you associated with?", "We are associated with 14+ leading institutions including ICICI, HDFC, Axis, Bandhan, Saraswat, Federal, AU Small Finance, Tata Capital, Poonawalla, Kogta, SK Financials, Jana Small Finance, Piramal, and Bajaj Finance.", ], [ "Do you provide services Pan-India?", "Yes, we have a Pan-India presence and can assist you with your loan requirements anywhere in India.", ], [ "Is my personal information secure?", "Yes. We value your privacy and use your information solely for the purpose of processing your loan enquiry. We do not sell your data.", ], [ "How can I check my loan eligibility?", "You can submit your details via our enquiry form or WhatsApp. Our team will review your profile and let you know the best options available.", ], ]; render( "#faqList", FAQ, (f, i) => `<div class="card !rounded-2xl hover:!transform-none hover:!shadow-none"><h3><button class="faq-q w-full flex justify-between items-center gap-4 text-left p-5 font-semibold fh text-deep" aria-expanded="false" aria-controls="fa${i}">${f[0]}<i data-lucide="plus" class="w-5 h-5 text-purple shrink-0 transition"></i></button></h3><div id="fa${i}" class="faq-a"><p class="px-5 pb-5 text-slate2 text-sm">${f[1]}</p></div></div>`, ); /* FAQ accordion: one open at a time */ $$(".faq-q").forEach((b) => b.addEventListener("click", () => { const open = b.getAttribute("aria-expanded") === "true"; $$(".faq-q").forEach((x) => { x.setAttribute("aria-expanded", "false"); $("#" + x.getAttribute("aria-controls")).style.maxHeight = 0; x.querySelector("i,svg").style.transform = ""; }); if (!open) { b.setAttribute("aria-expanded", "true"); const p = $("#" + b.getAttribute("aria-controls")); p.style.maxHeight = p.scrollHeight + "px"; b.querySelector("i,svg").style.transform = "rotate(45deg)"; } }), ); /* Forms: validation + demo success (no backend) */ $$(".enq").forEach((f) => f.addEventListener("submit", (e) => { e.preventDefault(); let ok = true; $$("[required]", f).forEach((el) => { let good = el.type === "checkbox" ? el.checked : el.value.trim() !== ""; if (good && el.name === "mobile") good = /^[6-9]\d{9}$/.test(el.value.trim()); if (good && el.type === "email") good = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value); el.classList.toggle("err", !good); el.setAttribute("aria-invalid", !good); if (!good) ok = false; }); const m = $(".msg", f); m.classList.remove("hidden"); if (ok) { m.className = "msg sm:col-span-2 rounded-lg bg-emerald-50 text-emerald-800 text-sm p-3"; m.textContent = f.dataset.ok; f.reset(); } else { m.className = "msg sm:col-span-2 rounded-lg bg-red-50 text-red-700 text-sm p-3"; m.textContent = "Please complete the highlighted fields. Mobile must be a valid 10-digit Indian number."; } }), ); $$(".field").forEach((el) => el.addEventListener("input", () => el.classList.remove("err")), ); /* Contact links, menu, scroll effects */ $$("[data-wa]").forEach( (a) => (a.href = `https://wa.me/${CFG.wa}?text=${encodeURIComponent("Hi, I would like to enquire about a loan with Auto Mark India Pvt. Ltd.")}`), ); $$("[data-tel]").forEach((a) => (a.href = "tel:" + CFG.tel1)); $("#yr").textContent = new Date().getFullYear(); const mb = $("#menuBtn"), mm = $("#mobMenu"); mb.addEventListener("click", () => { const o = mm.classList.toggle("hidden") === false; mb.setAttribute("aria-expanded", o); }); $$("#mobMenu a").forEach((a) => a.addEventListener("click", () => { mm.classList.add("hidden"); mb.setAttribute("aria-expanded", "false"); }), ); const hdr = $("#hdr"), tt = $("#toTop"); addEventListener( "scroll", () => { const y = scrollY > 20; hdr.classList.toggle("shadow-md", y); hdr.classList.toggle("border-slate-100", y); const s = scrollY > 600; tt.classList.toggle("opacity-0", !s); tt.classList.toggle("pointer-events-none", !s); }, { passive: true }, ); tt.addEventListener("click", () => scrollTo({ top: 0, behavior: "smooth" }), ); const io = new IntersectionObserver( (es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: 0.12 }, ); $$(".rv").forEach((el) => io.observe(el)); $$("img").forEach((i) => i.addEventListener("error", () => { i.removeAttribute("src"); i.classList.add("img-fb"); }), ); lucide.createIcons();
+      );
+      render(
+        "#serviceCards",
+        [
+          {
+            t: "Auto Loans",
+            d: "Finance for new and used cars from top partners.",
+            i: "car",
+          },
+          {
+            t: "Home Loans",
+            d: "Step into your dream home with flexible tenure options.",
+            i: "home",
+          },
+          {
+            t: "Personal Loans",
+            d: "Quick funds for weddings, travel, or emergencies.",
+            i: "user",
+          },
+          {
+            t: "Business Loans",
+            d: "Fuel your business growth with tailored financing.",
+            i: "briefcase",
+          },
+          {
+            t: "Loan Against Property",
+            d: "Unlock the value of your property for immediate funds.",
+            i: "landmark",
+          },
+          {
+            t: "Working Capital",
+            d: "Manage daily operations with seamless funding.",
+            i: "trending-up",
+          },
+          {
+            t: "Insurance (Motor/Health/Life)",
+            d: "Protect what matters most with comprehensive coverage.",
+            i: "shield-check",
+          },
+          {
+            t: "Used Car Loans",
+            d: "Specialized financing for pre-owned vehicles.",
+            i: "history",
+          },
+        ],
+        (c) =>
+          `<div class="card rv p-6 flex flex-col"> <span class="w-12 h-12 rounded-xl bg-purple/10 text-purple grid place-items-center mb-5">${ic(c.i)}</span> <h3 class="fh font-bold text-lg text-deep">${c.t}</h3> <p class="mt-2 text-sm text-slate2 flex-1">${c.d}</p> <a href="#contact" class="mt-4 text-sm font-semibold text-purple hover:underline">Apply Now →</a> </div>`,
+      );
+      const PARTNERS = [
+        "ICICI Bank",
+        "HDFC Bank",
+        "Axis Bank",
+        "Bandhan Bank",
+        "Saraswat Bank",
+        "Federal Bank",
+        "AU Small Finance Bank",
+        "Tata Capital",
+        "Poonawalla",
+        "Kogta Financials",
+        "SK Financials",
+        "Jana Small Finance Bank",
+        "Piramal",
+        "Bajaj Finance",
+      ];
+      render(
+        "#partnerGrid",
+        PARTNERS,
+        (p) =>
+          `<div class="card rv p-4 flex items-center justify-center text-center bg-white shadow-sm hover:shadow-md transition"> <span class="fh font-bold text-sm text-slate2">${p}</span> </div>`,
+      );
+      render(
+        "#steps",
+        [
+          [
+            "Submit Enquiry",
+            "Share your details and loan requirements via our form or WhatsApp.",
+          ],
+          [
+            "Expert Consultation",
+            "Our team reviews your profile and matches you with suitable lenders.",
+          ],
+          [
+            "Documentation",
+            "We guide you through the paperwork and verification process.",
+          ],
+          [
+            "Disbursement",
+            "Receive the funds and achieve your financial goals.",
+          ],
+        ],
+        (s, i) =>
+          `<div class="relative text-center rv" style="transition-delay:${i * 150}ms"><span class="relative z-10 mx-auto w-16 h-16 rounded-full bg-purple text-white fh text-xl font-extrabold grid place-items-center ring-8 ring-white shadow-lg">0${i + 1}</span><h3 class="fh font-bold text-xl text-deep mt-5">${s[0]}</h3><p class="mt-2 text-sm text-slate2 max-w-xs mx-auto">${s[1]}</p></div>`,
+      );
+      render(
+        "#testi",
+        [
+          [
+            "Rahul Sharma",
+            "Delhi",
+            "Auto Mark made my car loan process incredibly smooth. Got a great interest rate from ICICI.",
+          ],
+          [
+            "Priya Singh",
+            "Mumbai",
+            "I was confused about home loans. Their advisor patiently explained everything and found the best option.",
+          ],
+          [
+            "Vikram Patel",
+            "Bengaluru",
+            "Trustworthy and transparent. They have been my go-to financial partner for years.",
+          ],
+        ],
+        (t) =>
+          `<figure class="card rv p-6 flex flex-col"><div class="flex text-amber-400 gap-0.5" aria-label="5 out of 5 stars">${'<i data-lucide="star" class="w-4 h-4 fill-current"></i>'.repeat(5)}</div><blockquote class="mt-4 text-ink flex-1">“${t[2]}”</blockquote><figcaption class="mt-6 flex items-center gap-3"><span class="w-11 h-11 rounded-full bg-purple/10 text-purple grid place-items-center font-bold text-lg">${t[0][0]}</span><div><p class="fh font-bold text-sm text-deep">${t[0]}</p><p class="text-xs text-slate2">${t[1]}</p></div></figcaption></figure>`,
+      );
+      const FAQ = [
+        [
+          "What services does Auto Mark India Pvt. Ltd. provide?",
+          "We provide facilitation for Auto Loans (New & Used), Home Loans, Personal Loans, Business Loans, Loan Against Property, Working Capital, and Insurance (Motor, Health, Life).",
+        ],
+        [
+          "Are you a bank or NBFC?",
+          "No. We are a Direct Selling Agent (DSA) and loan facilitation partner. We connect you with our partner banks and NBFCs. All lending decisions are made by the respective lender.",
+        ],
+        [
+          "Which banks and NBFCs are you associated with?",
+          "We are associated with 14+ leading institutions including ICICI, HDFC, Axis, Bandhan, Saraswat, Federal, AU Small Finance, Tata Capital, Poonawalla, Kogta, SK Financials, Jana Small Finance, Piramal, and Bajaj Finance.",
+        ],
+        [
+          "Do you provide services Pan-India?",
+          "Yes, we have a Pan-India presence and can assist you with your loan requirements anywhere in India.",
+        ],
+        [
+          "Is my personal information secure?",
+          "Yes. We value your privacy and use your information solely for the purpose of processing your loan enquiry. We do not sell your data.",
+        ],
+        [
+          "How can I check my loan eligibility?",
+          "You can submit your details via our enquiry form or WhatsApp. Our team will review your profile and let you know the best options available.",
+        ],
+      ];
+      render(
+        "#faqList",
+        FAQ,
+        (f, i) =>
+          `<div class="card !rounded-2xl hover:!transform-none hover:!shadow-none"><h3><button class="faq-q w-full flex justify-between items-center gap-4 text-left p-5 font-semibold fh text-deep" aria-expanded="false" aria-controls="fa${i}">${f[0]}<i data-lucide="plus" class="w-5 h-5 text-purple shrink-0 transition"></i></button></h3><div id="fa${i}" class="faq-a"><p class="px-5 pb-5 text-slate2 text-sm">${f[1]}</p></div></div>`,
+      );
+      /* FAQ accordion: one open at a time */ $$(".faq-q").forEach((b) =>
+        b.addEventListener("click", () => {
+          const open = b.getAttribute("aria-expanded") === "true";
+          $$(".faq-q").forEach((x) => {
+            x.setAttribute("aria-expanded", "false");
+            $("#" + x.getAttribute("aria-controls")).style.maxHeight = 0;
+            x.querySelector("i,svg").style.transform = "";
+          });
+          if (!open) {
+            b.setAttribute("aria-expanded", "true");
+            const p = $("#" + b.getAttribute("aria-controls"));
+            p.style.maxHeight = p.scrollHeight + "px";
+            b.querySelector("i,svg").style.transform = "rotate(45deg)";
+          }
+        }),
+      );
+      /* Forms: validation + demo success (no backend) */ $$(".enq").forEach(
+        (f) =>
+          f.addEventListener("submit", (e) => {
+            e.preventDefault();
+            let ok = true;
+            $$("[required]", f).forEach((el) => {
+              let good =
+                el.type === "checkbox" ? el.checked : el.value.trim() !== "";
+              if (good && el.name === "mobile")
+                good = /^[6-9]\d{9}$/.test(el.value.trim());
+              if (good && el.type === "email")
+                good = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value);
+              el.classList.toggle("err", !good);
+              el.setAttribute("aria-invalid", !good);
+              if (!good) ok = false;
+            });
+            const m = $(".msg", f);
+            m.classList.remove("hidden");
+            if (ok) {
+              m.className =
+                "msg sm:col-span-2 rounded-lg bg-emerald-50 text-emerald-800 text-sm p-3";
+              m.textContent = f.dataset.ok;
+              f.reset();
+            } else {
+              m.className =
+                "msg sm:col-span-2 rounded-lg bg-red-50 text-red-700 text-sm p-3";
+              m.textContent =
+                "Please complete the highlighted fields. Mobile must be a valid 10-digit Indian number.";
+            }
+          }),
+      );
+      $$(".field").forEach((el) =>
+        el.addEventListener("input", () => el.classList.remove("err")),
+      );
+      /* Contact links, menu, scroll effects */ $$("[data-wa]").forEach(
+        (a) =>
+          (a.href = `https://wa.me/${CFG.wa}?text=${encodeURIComponent("Hi, I would like to enquire about a loan with Auto Mark India Pvt. Ltd.")}`),
+      );
+      $$("[data-tel]").forEach((a) => (a.href = "tel:" + CFG.tel1));
+      $("#yr").textContent = new Date().getFullYear();
+      const mb = $("#menuBtn"),
+        mm = $("#mobMenu");
+      mb.addEventListener("click", () => {
+        const o = mm.classList.toggle("hidden") === false;
+        mb.setAttribute("aria-expanded", o);
+      });
+      $$("#mobMenu a").forEach((a) =>
+        a.addEventListener("click", () => {
+          mm.classList.add("hidden");
+          mb.setAttribute("aria-expanded", "false");
+        }),
+      );
+      const hdr = $("#hdr"),
+        tt = $("#toTop");
+      addEventListener(
+        "scroll",
+        () => {
+          const y = scrollY > 20;
+          hdr.classList.toggle("shadow-md", y);
+          hdr.classList.toggle("border-slate-100", y);
+          const s = scrollY > 600;
+          tt.classList.toggle("opacity-0", !s);
+          tt.classList.toggle("pointer-events-none", !s);
+        },
+        { passive: true },
+      );
+      tt.addEventListener("click", () =>
+        scrollTo({ top: 0, behavior: "smooth" }),
+      );
+      const io = new IntersectionObserver(
+        (es) =>
+          es.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("in");
+              io.unobserve(e.target);
+            }
+          }),
+        { threshold: 0.12 },
+      );
+      $$(".rv").forEach((el) => io.observe(el));
+      $$("img").forEach((i) =>
+        i.addEventListener("error", () => {
+          i.removeAttribute("src");
+          i.classList.add("img-fb");
+        }),
+      );
+      lucide.createIcons();
     </script>
   </body>
 </html>
