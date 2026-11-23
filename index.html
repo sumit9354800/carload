@@ -28,6 +28,7 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/lucide@0.383.0/dist/umd/lucide.min.js"></script>
     <script>
       tailwind.config = {
@@ -490,9 +491,10 @@
               possible options.
             </p>
           </div>
+          <!-- Grid for Logos -->
           <div
             id="partnerGrid"
-            class="mt-12 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4"
+            class="mt-12 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6"
           ></div>
         </div>
       </section>
@@ -796,10 +798,7 @@
           respective lender.
         </p>
         <div class="mt-5 flex flex-wrap justify-between gap-3 text-xs">
-          <p>
-            © <span id="yr"></span> Alfa Solution
-            reserved.
-          </p>
+          <p>© <span id="yr"></span> Alfa Solution reserved.</p>
           <p class="flex gap-4">
             <a href="#" class="hover:text-white">Privacy Policy</a>
             <a href="#" class="hover:text-white">Terms &amp; Conditions</a>
@@ -932,27 +931,44 @@
         (c) =>
           `<div class="card rv p-6 flex flex-col"> <span class="w-12 h-12 rounded-xl bg-purple/10 text-purple grid place-items-center mb-5">${ic(c.i)}</span> <h3 class="fh font-bold text-lg text-deep">${c.t}</h3> <p class="mt-2 text-sm text-slate2 flex-1">${c.d}</p> <a href="#contact" class="mt-4 text-sm font-semibold text-purple hover:underline">Apply Now →</a> </div>`,
       );
+      // PARTNERS DATA WITH LOGOS
       const PARTNERS = [
-        "ICICI Bank",
-        "HDFC Bank",
-        "Axis Bank",
-        "Bandhan Bank",
-        "Saraswat Bank",
-        "Federal Bank",
-        "AU Small Finance Bank",
-        "Tata Capital",
-        "Poonawalla",
-        "Kogta Financials",
-        "SK Financials",
-        "Jana Small Finance Bank",
-        "Piramal",
-        "Bajaj Finance",
+        { name: "ICICI Bank", logo: "images/partners/icici.png" },
+        { name: "HDFC Bank", logo: "images/partners/hdfc.png" },
+        { name: "Axis Bank", logo: "images/partners/axis.png" },
+        { name: "Bandhan Bank", logo: "images/partners/bandhan.png" },
+        { name: "Saraswat Bank", logo: "images/partners/saraswat.png" },
+        { name: "Federal Bank", logo: "images/partners/federal.png" },
+        { name: "AU Small Finance Bank", logo: "images/partners/au.png" },
+        { name: "Tata Capital", logo: "images/partners/tata-capital.png" },
+        { name: "Poonawalla", logo: "images/partners/poonawalla.png" },
+        { name: "Kogta Financials", logo: "images/partners/kogta.png" },
+        { name: "SK Financials", logo: "images/partners/sk.png" },
+        { name: "Jana Small Finance Bank", logo: "images/partners/jana.png" },
+        { name: "Piramal", logo: "images/partners/piramal.svg" },
+        { name: "Bajaj Finance", logo: "images/partners/bajaj.png" },
       ];
+
       render(
         "#partnerGrid",
         PARTNERS,
-        (p) =>
-          `<div class="card rv p-4 flex items-center justify-center text-center bg-white shadow-sm hover:shadow-md transition"> <span class="fh font-bold text-sm text-slate2">${p}</span> </div>`,
+        (p) => `
+    <div class="card rv p-4 flex flex-col items-center justify-center text-center bg-white shadow-sm hover:shadow-md transition duration-300 group">
+      <div class="h-16 w-full flex items-center justify-center mb-2">
+        <!-- Image Tag for Logo -->
+        <img 
+          src="${p.logo}" 
+          alt="${p.name} Logo" 
+          class="max-h-full max-w-[80%] object-contain transition-transform duration-300 group-hover:scale-105 img-fb" 
+          loading="lazy"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+        />
+        <!-- Fallback text if image fails to load -->
+        <span class="hidden fh font-bold text-xs text-slate2">${p.name}</span>
+      </div>
+      <p class="fh font-bold text-xs text-slate-500 mt-2 group-hover:text-purple transition-colors">${p.name}</p>
+    </div>
+  `,
       );
       render(
         "#steps",

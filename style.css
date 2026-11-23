@@ -1,0 +1,13 @@
+/* Ensure logos stay within bounds and look good */
+#partnerGrid .card img {
+  max-width: 100px; /* Adjust based on your logo sizes */
+  height: auto;
+  filter: grayscale(0%); /* Optional: makes logos black & white */
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+#partnerGrid .card:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
